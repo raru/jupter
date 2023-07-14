@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jupter/static/css/main.7d26dd4e.css",
+    "main.css": "/jupter/static/css/main.9a6bd0f0.css",
     "main.js": "/jupter/static/js/main.8878f901.js",
     "static/media/video.mp4": "/jupter/static/media/video.c4b53f135d9f22f9943b.mp4",
     "static/media/hero_banner-01.jpg": "/jupter/static/media/hero_banner-01.20ec41d091761d0144a6.jpg",
@@ -284,7 +284,7 @@
     "static/media/icon_77.svg": "/jupter/static/media/icon_77.e206c8eee3a758dc615a.svg"
   },
   "entrypoints": [
-    "static/css/main.7d26dd4e.css",
+    "static/css/main.9a6bd0f0.css",
     "static/js/main.8878f901.js"
   ]
 }
