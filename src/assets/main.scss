@@ -369,14 +369,14 @@ height: 32px;
 .vcamp-text-block-three .slider:before {
   height: 26px;
   width: 26px;
-  right: 34px;
+  right: 5px;
   bottom: 2px;
 }
 
 .vcamp-text-block-three input:checked + .vcamp-text-block-three .slider:before {
-  -webkit-transform: translateX(-26px);
-  -ms-transform: translateX(-26px);
-  transform: translateX(-26px);
+  -webkit-transform: translateX(-43px) !important;
+  -ms-transform: translateX(-43px) !important;
+  transform: translateX(-43px) !important;
 }
 
 .vcamp-text-block-three .img-container:before {
