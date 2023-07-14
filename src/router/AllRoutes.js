@@ -123,7 +123,7 @@ const AllRoutes = () => {
       <ScrollTopBehaviour />
       <Routes>
         {/* All home */}
-        <Route path="/" element={<ServiceProvider />} />
+        <Route path="/" element={<CreativeAgency />} />
         <Route path="/business" element={<Business />} />
         <Route path="/agency-minimal" element={<AgencyMinimal />} />
         <Route path="/service-provider" element={<ServiceProvider />} />

@@ -366,14 +366,12 @@ width: 80px;
 height: 32px;
 }
 
-.vcamp-text-block-three
-.slider:before {
+.vcamp-text-block-three .slider:before {
   height: 26px;
   width: 26px;
-  right: 4px;
+  right: 34px;
   bottom: 2px;
 }
-
 
 .vcamp-text-block-three input:checked + .vcamp-text-block-three .slider:before {
   -webkit-transform: translateX(-26px);
