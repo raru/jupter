@@ -5,19 +5,18 @@ import Seo from "../components/common/seo/Seo";
 function NotFound() {
   return (
     <>
-      <Seo title="404 " />
+      <Seo title="jupter - 404 " />
       {/* End Seo Related data */}
 
       <div className="error-page d-flex align-items-center">
         <div className="content-wrapper">
           <h6>404</h6>
-          <h1 className="font-recoleta">Page Not Found </h1>
+          <h1 className="font-recoleta">Página não encontrada </h1>
           <p className="text-lg">
-            Publishing industries for previewing layouts & <br /> visual mockups
-            used.
+            Não perca energia procurando <br /> algo que não está aqui.
           </p>
           <Link to="/" className="theme-btn-four">
-            GO BACK
+            HOME
           </Link>
         </div>
         {/* <!-- /.content-wrapper --> */}

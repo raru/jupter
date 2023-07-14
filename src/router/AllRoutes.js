@@ -255,7 +255,9 @@ const AllRoutes = () => {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
 
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<ServiceProvider />} />
+
       </Routes>
     </>
   );
