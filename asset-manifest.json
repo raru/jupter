@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jupter/static/css/main.9a6bd0f0.css",
-    "main.js": "/jupter/static/js/main.8878f901.js",
+    "main.css": "/jupter/static/css/main.546914eb.css",
+    "main.js": "/jupter/static/js/main.5357e4e3.js",
     "static/media/video.mp4": "/jupter/static/media/video.c4b53f135d9f22f9943b.mp4",
     "static/media/hero_banner-01.jpg": "/jupter/static/media/hero_banner-01.20ec41d091761d0144a6.jpg",
     "static/media/fa-solid-900.svg": "/jupter/static/media/fa-solid-900.13de59f1a36b6cb4bca0.svg",
@@ -140,6 +140,7 @@
     "static/media/shape_10.svg": "/jupter/static/media/shape_10.a83d485322c71260470b71937e0a4aa5.svg",
     "static/media/shape_17.svg": "/jupter/static/media/shape_17.39b7e0b43227930d09c232c75b1e23d7.svg",
     "static/media/shape_26.svg": "/jupter/static/media/shape_26.54a4cf2651cb728cc5c241ebac4e75fd.svg",
+    "static/media/shape_22.svg": "/jupter/static/media/shape_22.523829bb683e3808be1eff7413c35f2b.svg",
     "static/media/shape_12.svg": "/jupter/static/media/shape_12.9a5e8678096f691fd6bbd0597e62147a.svg",
     "static/media/slick.svg": "/jupter/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/shape_37.svg": "/jupter/static/media/shape_37.4a9b56bdeabb72868c6af3135fa5c109.svg",
@@ -158,6 +159,7 @@
     "static/media/shape_04.svg": "/jupter/static/media/shape_04.a3273e05f267b854bafbd76dad529b30.svg",
     "static/media/icon_13.svg": "/jupter/static/media/icon_13.92865614a7fa15484930d7ff752c84d0.svg",
     "static/media/shape_38.svg": "/jupter/static/media/shape_38.78d9df289d4914496a03b129e5e258d9.svg",
+    "static/media/shape_23.svg": "/jupter/static/media/shape_23.d3981c8dce8d9b755e4ebd1c3bd532e4.svg",
     "static/media/shape_45.svg": "/jupter/static/media/shape_45.17f79b0f0b95226afad06f62b7010a5d.svg",
     "static/media/shape_20.svg": "/jupter/static/media/shape_20.daa57caf165f6bc24d4fd9318b50c967.svg",
     "static/media/icon_32.svg": "/jupter/static/media/icon_32.448b6b7c49ab8c0553a2385f9e803276.svg",
@@ -284,7 +286,7 @@
     "static/media/icon_77.svg": "/jupter/static/media/icon_77.e206c8eee3a758dc615a.svg"
   },
   "entrypoints": [
-    "static/css/main.9a6bd0f0.css",
-    "static/js/main.8878f901.js"
+    "static/css/main.546914eb.css",
+    "static/js/main.5357e4e3.js"
   ]
 }
