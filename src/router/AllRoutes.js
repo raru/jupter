@@ -7,6 +7,7 @@ import CreativeAgency from "../pages/home-pages/CreativeAgency";
 import Business from "../pages/home-pages/Business";
 import AgencyMinimal from "../pages/home-pages/AgencyMinimal";
 import ServiceProvider from "../pages/home-pages/ServiceProvider";
+import ServiceProvider2 from "../pages/home-pages/ServiceProviderCopy";
 import Startup from "../pages/home-pages/Startup";
 import StartupAgency from "../pages/home-pages/StartupAgency";
 import ConsultingAgency from "../pages/home-pages/ConsultingAgency";
@@ -126,20 +127,14 @@ const AllRoutes = () => {
         <Route path="/" element={<ServiceProvider />} />
         <Route path="/business" element={<Business />} />
         <Route path="/agency-minimal" element={<AgencyMinimal />} />
-        <Route path="/service-provider" element={<ServiceProvider />} />
+        <Route path="/service-provider-3" element={<ServiceProvider2 />} />
         <Route path="/startup" element={<Startup />} />
         <Route path="/startup-agency" element={<StartupAgency />} />
         <Route path="/consulting-agency" element={<ConsultingAgency />} />
-        <Route
-          path="/photographer-portfolio"
-          element={<PhotographerPortfolio />}
-        />
+        <Route path="/photographer-portfolio" element={<PhotographerPortfolio />} />
         <Route path="/designer-portfolio" element={<DesignerPortfolio />} />
         <Route path="/marketing-agency" element={<MarketingAgency />} />
-        <Route
-          path="/design-agency-portfolio"
-          element={<DesignAgencyPortfolio />}
-        />
+        <Route path="/design-agency-portfolio"  element={<DesignAgencyPortfolio />}/>
         <Route path="/coming-soon" element={<ComingSoon />} />
 
         {/* elements dropdown Header pages */}

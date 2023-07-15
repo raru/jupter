@@ -7,7 +7,7 @@ const SidebarFooter = () => {
   return (
     <>
       <div>
-        <Link to="/sign-in" className="theme-btn-one ripple-btn d-block">
+        <Link to="/" className="theme-btn-one ripple-btn d-block">
           <img src="images/icon/icon_22.svg" alt="" className="me-2 ms-0" />{" "}
           login
         </Link>

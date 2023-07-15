@@ -6,11 +6,11 @@ const SidebarHeader = () => {
     <div className="offcanvas-header">
       <div className="logo">
         <Link to="/">
-          <img
-            src={require("../../../../assets/images/logo/vCamp_01.svg").default}
-            alt="brand"
-            width="127"
-          />
+        <img
+                src={require("../../../../assets/images/logo/jupter_logotipo.svg").default}
+                alt="brand"
+                width="127"
+              />
         </Link>
       </div>
       {/* End .logo */}

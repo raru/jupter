@@ -34,6 +34,11 @@ $roxo-color: #825BFF;
   --bs-accordion-bg: transparent;
 }
 
+
+.theme-main-menu.sticky-menu.fixed {
+  padding-top: 0;
+}
+
 .header-top {
   background: $dark-color;
   color: white;
