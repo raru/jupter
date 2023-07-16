@@ -1,6 +1,6 @@
 import React from "react";
 
-const FromStyleOne = ({ className = "" }) => {
+const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
@@ -10,10 +10,10 @@ const FromStyleOne = ({ className = "" }) => {
         <div className="row controls">
           <div className="col-12">
             <div className="input-group-meta form-group mb-25">
-              <label>Name*</label>
+              <label>Nome Completo*</label>
               <input
                 type="text"
-                placeholder="Bostami Hasan"
+                placeholder="Seu nome"
                 name="name"
                 required
               />
@@ -23,11 +23,25 @@ const FromStyleOne = ({ className = "" }) => {
           {/* End .col */}
 
           <div className="col-12">
-            <div className="input-group-meta form-group mb-40">
-              <label>Email*</label>
+            <div className="input-group-meta form-group mb-25">
+              <label>Telefone*</label>
+              <input
+                type="text"
+                placeholder="+55 DDD 1234-4321"
+                name="email"
+                required
+              />
+              <div className="help-block with-errors"></div>
+            </div>
+          </div>
+          {/* End .col */}
+
+          <div className="col-12">
+            <div className="input-group-meta form-group mb-25">
+              <label>E-mail*</label>
               <input
                 type="email"
-                placeholder="rshdkabir@gmail.com"
+                placeholder="seuemail@gmail.com"
                 name="email"
                 required
               />
@@ -38,8 +52,9 @@ const FromStyleOne = ({ className = "" }) => {
 
           <div className="col-12">
             <div className="input-group-meta form-group mb-35">
+            <label>Mensagem*</label>
               <textarea
-                placeholder="Your message*"
+                placeholder="Mensagem*"
                 name="message"
                 required
               ></textarea>
@@ -49,8 +64,8 @@ const FromStyleOne = ({ className = "" }) => {
           {/* End .col */}
 
           <div className="col-12">
-            <button className={`theme-btn-one ripple-btn w-100 ${className}`}>
-              Send Message
+            <button className={`theme-btn-one  ripple-btn w-100 ${className}`}>
+              Enviar
             </button>
           </div>
           {/* End .col */}

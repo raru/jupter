@@ -6,34 +6,26 @@ const counterUpContent = [
   {
     id: 1,
     startCount: "0",
-    endCount: "3.5",
-    endPointText: "k",
-    meta: "Job done successfully",
+    endCount: "999",
+    endPointText: "milhões",
+    meta: "entre 2020 e 2022.",
     animationDelay: "0",
   },
   {
     id: 2,
     startCount: "0",
-    endCount: "20",
-    endPointText: "million",
-    meta: "3,280 avg rating",
+    endCount: "777",
+    endPointText: "milhões",
+    meta: "entre 2020 e 2022.",
     animationDelay: "100",
   },
   {
     id: 3,
     startCount: "0",
-    endCount: "50",
-    endPointText: "k+",
-    meta: "Contact Profile",
+    endCount: "888",
+    endPointText: "milhões",
+    meta: "entre 2020 e 2022.",
     animationDelay: "200",
-  },
-  {
-    id: 4,
-    startCount: "0",
-    endCount: "3000",
-    endPointText: "+",
-    meta: "Using vCamp",
-    animationDelay: "300",
   },
 ];
 
@@ -43,13 +35,13 @@ const CounterUp = () => {
     <>
       {counterUpContent.map((val, i) => (
         <div
-          className="col-lg-3 col-sm-6"
-          data-aos="fade-up"
+        className="col-lg-4 col-sm-6"
+        data-aos="fade-up"
           data-aos-delay={val.animationDelay}
           key={val.id}
         >
-          <div className="counter-block-one text-center mb-45">
-            <div className="main-count font-recoleta">
+          <div className="counter-block-one mb-45">
+            <div className="main-count roxo">
               <span className="counter">
                 <CountUp
                   start={focus ? val.startCount : null}
@@ -71,7 +63,7 @@ const CounterUp = () => {
                   )}
                 </CountUp>
               </span>
-              {val.endPointText}
+             {val.endPointText}
             </div>
             <p className="theme-mb-0">{val.meta}</p>
           </div>

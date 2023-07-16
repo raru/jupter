@@ -2,51 +2,43 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SubscribeForm from "../common/form/SubscribeForm";
 import Partners from "./Partners";
-import img1 from "../../assets/images/assets/ils_01.png";
+import img1 from "../../assets/images/assets/quem_hero-img1@2x.png";
 
 const Hero = () => {
   return (
     <>
       <div className="container">
-        <div className="row">
-          <div className="col-lg-6 col-md-8">
-            <h1 className="hero-heading font-recoleta theme-mb-0">
-              We’r the{" "}
-              <span className="d-inline-block position-relative">
-                Word<em>Press</em>
-              </span>{" "}
-              guru.
-            </h1>
-            <p className="hero-sub-heading text-lg">
-              We are helping client to create WordPress websites with our
-              talented expert.
-            </p>
-            <SubscribeForm />
-            <p className="term-text theme-mb-0">
-              Already a member? <Link to="/sign-in">Sign in.</Link>
-            </p>
-          </div>
+        <div className="row align-items-center">
+        <div className="col-md-6">
+          <Link to="/" className="btn-branco btn-branco_transparente">
+              <span className="m-0">quem somos</span>
+            </Link>          
+        <div className="title-style-five white-vr">
+          <h2 className="title mt-20">
+          Energia <br/>
+          é o que move o mundo.<br/>
+          É o que move as pessoas.<br/>
+          <br/>
+          E, claro, <br/>
+          <span className="verde"> move a sua empresa.</span>
+          </h2>
+
+        </div>
+      </div>
+      <div className="col offset-md-1">
+      <img
+                src={img1}
+                alt="hero"
+                width="90%"
+              />        
+      </div>
+
           {/* End .col */}
         </div>
       </div>
       {/* End container */}
 
-      <div className="illustration-container">
-        <img src={img1} alt="illustration" className="m-auto" />
-      </div>
-      {/* <!-- /.illustration-container --> */}
 
-      <div className="partner-slider-one mt-150 md-mt-80">
-        <div className="container">
-          <p className="text-center">
-            Over <span>32K+</span> software businesses growing with vCamp.
-          </p>
-          <div className="partnerSliderOne">
-            <Partners />
-          </div>
-        </div>
-      </div>
-      {/* <!-- /.partner-slider-one --> */}
     </>
   );
 };

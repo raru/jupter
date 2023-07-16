@@ -34,20 +34,18 @@ $roxo-color: #825BFF;
   --bs-accordion-bg: transparent;
 }
 
+.verde { color: var(--verde-color);}
+.roxo { color: var(--roxo-color);}
+.white { color: #fff; } 
 
-.theme-main-menu.sticky-menu.fixed {
-  padding-top: 0;
-}
+body { font-family: "Inter";  }
+h1, h2, h3, h4, h5, h6 { font-family: "Faktum";  }
 
-.header-top {
-  background: $dark-color;
-  color: white;
-	font-family: "Inter";
-  font-size: .6em;
-  height: 30px;
-  padding: 0 115px;
-}
+.theme-main-menu.sticky-menu.fixed {  padding-top: 0; }
+.bg-roxo {  background-color: var(--roxo-color); }
 
+
+.header-top {  background: $dark-color;  color: white;	font-family: "Inter";  font-size: .6em;  height: 30px;  padding: 0 115px;}
 
 
 /* The switch - the box around the slider */
@@ -282,10 +280,11 @@ footer .logo small {
   margin-left: 10px;
 }
 
-.title-style-five .title {
+.title-style-five .title, .title-style-one .title {
   font-family: "Faktum";
   font-size: 36px;
   line-height: 1.18em;
+  margin-bottom: 20px;
 }
 
 .fancy-banner-one p {
@@ -335,6 +334,16 @@ footer .logo small {
   border: 1px solid #ffffff;
   background: transparent;
   color: #fff;
+}
+
+.btn-rounded_black {
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: .8em;
+  font-weight: 100;
 }
 
 
@@ -443,3 +452,59 @@ height: 32px;
   -ms-transform: translateX(-43px) !important;
   transform: translateX(-43px) !important;
 }
+
+
+
+
+
+
+
+// BUSSINES
+.hero-banner-one { background: var(--roxo-color);    padding: 85px 85px 140px; }
+.hero-banner-one .title-style-five.white-vr .title {  color: #fff; }
+.partner-slider-one {
+  margin-top: -100px;
+  z-index: 1;
+  position: relative;
+}
+.bg-darkroxo { background: var(--dark-color); color: white; padding: 85px 85px 140px;}
+.bg-darkroxo .title {  color: #fff; font-size: 40px; }
+.card-style-two {  border-top: none;  padding-top: 45px;  margin-bottom: 10px; }
+.card-style-two .icon {  background: transparent; margin-bottom: 20px;  }
+.counter-block-one .main-count {
+  font-size: 28px;
+  line-height: initial;
+  margin-bottom: 0px;
+  color: var(--roxo-color) !important; 
+}
+.fancy-banner-ten {
+  background: var(--roxo-color);
+  height: 250px;
+  box-sizing: content-box;
+  padding: 5% 5% 0;
+  text-align: center;
+  border-radius: 30px;
+  margin-inline: 15%;
+  margin-top: -100px;
+}
+
+.fancy-banner-ten .btn-branco { width: 250px;}
+.bkgimg-section {  position: relative;  padding: 225px 0 185px;  margin-top: -135px;  z-index: 1;}
+.bkgimg-section.quem { background: url("../assets/images/assets/quem_bkg@2x.jpg") center center /cover; margin-top: -250px; }
+
+.bg-darkgradient {background: rgb(130,91,255);background: linear-gradient(180deg, rgba(130,91,255,1) 0%, rgba(11,20,47,1) 71%);}
+.bg-darkgradient .btn-branco {  border: 1px solid #fff;  color: #fff;  background: transparent;}
+.bg-darkgradient .title-style-five.white-vr .title {  color: white; }
+.bg-darkgradient p { color: white; font-size: 15px; }
+.bg-darkgradient .logo_mask {  margin-top: 0px; }
+
+
+
+
+.contact-section-one {    z-index: 9;    position: relative; }
+.form-style-one {  background: transparent;  padding: 0;  margin-right: 145px; }
+.theme-btn-one-roxo {  font-family: "faktum" !important;  font-size: 17px !important;  color: #fff !important; background: var(--roxo-color) !important;}
+.form-style-one .input-group-meta input, .form-style-one .input-group-meta textarea, .form-style-one .input-group-meta select, .form-style-three .input-group-meta select {
+  border:1px solid #E6E6E6;}
+
+.upload-box { background: white; border-radius: 25px; text-align: center; padding: 25px; width: 80%;}
