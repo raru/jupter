@@ -23,7 +23,7 @@ const Header = ({ className = "" }) => {
       } ${className}`}
     >
 
-      <div className="header-top d-flex  align-items-center justify-content-end"> 
+      <div className="header-top d-flex  align-items-center justify-content-center justify-content-sm-end"> 
           {/* <img
                     src={require("../../assets/images/icon/header_icon-on.svg").default}
                     alt="brand"
@@ -77,7 +77,7 @@ const Header = ({ className = "" }) => {
           </nav>
           {/* End .navbar */}
 
-          <div className="right-widget d-flex align-items-center">
+          <div className="right-widget d-flex align-items-center d-none d-sm-block">
             {/* <Link to="/sign-in" className="d-flex align-items-center login-btn"> */}
             <Link to="/area-cliente" className="d-flex align-items-center login-btn">
                 <span>Área do Cliente</span>

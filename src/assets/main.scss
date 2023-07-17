@@ -385,16 +385,16 @@ footer .logo small {
 
 
 
-.vcamp-text-block-three .img-container:before {
+.text-block-three .img-container:before {
   background: none;
 }
-.vcamp-text-block-three .menu-column {  padding:10%; }
-.vcamp-text-block-three .menu-column:hover { background-color: var(--roxo-color); color:white; }
+.text-block-three .menu-column {  padding:10%; }
+.text-block-three .menu-column:hover { background-color: var(--roxo-color); color:white; }
 
-.vcamp-text-block-three .col-4 {padding: 20px;}
-.text-block-three .col-4 {padding: 20px;}
+.text-block-three .box-solucao {padding: 20px;}
+.text-block-three .box-solucao {padding: 20px;}
 
-.vcamp-text-block-three .col-4:first-child, .vcamp-text-block-three .col-4:nth-child(2) {
+.text-block-three .box-solucao:first-child, .text-block-three .box-solucao:nth-child(2) {
   border-right-width: 0 !important;
   border-width: 1px;
   border-style: solid;
@@ -405,8 +405,8 @@ footer .logo small {
     rgba(255, 255, 255, 0)
   ) 1 100%;
 }
-.vcamp-text-block-three .col-4:nth-child(4) {border:#445DAA 1px solid;}
-.vcamp-text-block-three .col-4:nth-child(5) {
+.text-block-three .box-solucao:nth-child(4) {border:#445DAA 1px solid;}
+.text-block-three .box-solucao:nth-child(5) {
   border-style: solid;
   border-image: linear-gradient(to right, #445DAA, rgba(0,0,0,0)) 1;
   border-right-width: 0 !important;
@@ -414,7 +414,7 @@ footer .logo small {
   border-width: 1px;
   border-top-width: 1px !important;
 }
-.vcamp-text-block-three .col-4:last-child {
+.text-block-three .box-solucao:last-child {
   border-right-width: 0 !important;
   border-width: 1px;
   border-style: solid;
@@ -439,7 +439,7 @@ footer .logo small {
   }
 
 
-.vcamp-text-block-three {  padding: 200px 0 100px; }
+.text-block-three {  padding: 200px 0 100px; }
 .text-block-three {  padding: 200px 0 100px; }
 
 
@@ -447,20 +447,20 @@ footer .logo small {
 
 
 
-.vcamp-text-block-three
+.text-block-three
 .switch {
 width: 80px;
 height: 32px;
 }
 
-.vcamp-text-block-three .slider:before {
+.text-block-three .slider:before {
   height: 26px;
   width: 26px;
   right: 5px;
   bottom: 2px;
 }
 
-.vcamp-text-block-three input:checked + .vcamp-text-block-three .slider:before {
+.text-block-three input:checked + .text-block-three .slider:before {
   -webkit-transform: translateX(-43px) !important;
   -ms-transform: translateX(-43px) !important;
   transform: translateX(-43px) !important;
@@ -581,6 +581,10 @@ height: 32px;
   margin-top: 5px;
 }
 
+.text-block-three .shape-one {
+  -webkit-animation: fade-in 1s linear infinite;
+  animation: fade-in 1s linear infinite;
+}
 
 .menusolucoes .w20:first-child {
   margin-right: 8px;
@@ -614,3 +618,80 @@ height: 32px;
 .user-data-page .form-wrapper h2 span:before {  background: var(--verde-color); }
 .user-data-page .go-back-button:hover {color: var(--verde-color);}
 .user-data-page .go-back-button {  font-family: "inter";}
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+  body {    font-size: 12px;}
+  .container, .container-fluid {
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1); }
+  .hero-content, .hero-content .title-style-five.white-vr .title, .hero-content p {    padding-right: 0; }  
+  .theme-main-menu, .theme-main-menu.theme-menu-six {    padding: 0; }
+  .header-top {
+      padding: 0;
+      text-align: center;
+  }
+  
+  header .inner-content {
+      padding: 20px 10px;
+  }
+  
+  .navbar-toggler {
+      right: 15px;
+  }
+
+  .navbar .dropdown-menu {
+    font-size: 13px;
+    box-shadow: 0 3px 50px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown-menu .w20 {
+  width: 48%;
+  border-right: none;}
+  
+  .hero_slider_two .slider-inner {
+      padding: 20px 15px 20px;
+  }
+  .bg-darkroxo {
+    padding: 20px 15px 20px;
+}
+  .title-style-five h1.title, .title-style-one h1.title {
+      font-size: 28px;
+      }
+  
+  
+  .text-block-three, .text-block-three {
+      padding: 100px 0 50px;
+  }
+  
+  .title-style-five .title, .title-style-one .title {
+      font-size: 22px;
+  }
+  
+  .logo_mask {
+      margin-top: 50px;
+      }
+  
+  .video_holder {
+      height: 355px;
+      width: 345px;
+  }
+  
+  .video_bolinhas {
+      margin-left: 10px;
+      margin-top: -267px;
+      width: 325px;
+  }
+  
+  
+  
+  
+  }

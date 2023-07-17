@@ -160,7 +160,7 @@ const MegaMenuOne = () => {
       {/* End portfolio dropdown */}
 
 
-      <li className="nav-item pl-15">
+      <li className="nav-item pl-md-15">
         <button
           className="nav-link"
         >

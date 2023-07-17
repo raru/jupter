@@ -59,7 +59,7 @@ const Home = () => {
 				Vcamp Text Block Three
 			============================================== 
 			--> */}
-      <div className="vcamp-text-block-three">
+      <div className="text-block-three">
         <div className="container">
           <TextBlock />
         </div>
