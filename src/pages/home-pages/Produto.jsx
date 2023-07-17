@@ -21,10 +21,10 @@ import TextBlockTwo from "../../components/service-provider/TextBlockTwo";
 import HeroProduto from "../../components/business/HeroProduto";
 import MenuSolucoes from "../../components/common/header/mega-menu/MenuSolucoes";
 
-const Produtos = () => {
+const Produto = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Produtos" />
+      <Seo title="Produto" />
       {/* End Seo Related data */}
 
       {/* <!-- 
@@ -161,4 +161,4 @@ const Produtos = () => {
 };
 
 
-export default Produtos;
+export default Produto;

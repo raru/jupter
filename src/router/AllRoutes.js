@@ -11,7 +11,7 @@ import FaleConosco from "../pages/home-pages/FaleConosco";
 import Glossario from "../pages/home-pages/Glossario";
 import AgencyMinimal from "../pages/home-pages/AgencyMinimal";
 import Home from "../pages/home-pages/Home";
-import Produtos from "../pages/home-pages/Produtos";
+import Produto from "../pages/home-pages/Produto";
 import Startup from "../pages/home-pages/Startup";
 import StartupAgency from "../pages/home-pages/StartupAgency";
 import ConsultingAgency from "../pages/home-pages/ConsultingAgency";
@@ -133,7 +133,7 @@ const AllRoutes = () => {
         <Route path="/analise" element={<Analise />} />
         <Route path="/carreira" element={<Carreira />} />
         <Route path="/fale-conosco" element={<FaleConosco />} />
-        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/produto" element={<Produto />} />
         <Route path="/startup" element={<Startup />} />
         <Route path="/startup-agency" element={<StartupAgency />} />
         <Route path="/consulting-agency" element={<ConsultingAgency />} />
