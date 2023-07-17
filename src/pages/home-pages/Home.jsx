@@ -19,7 +19,7 @@ import TextBlock from "../../components/service-provider/TextBlock";
 import TextBlockTitle from "../../components/service-provider/TextBlockTitle";
 import TextBlockTwo from "../../components/service-provider/TextBlockTwo";
 
-const ServiceProvider = () => {
+const Home = () => {
   return (
     <div className="main-page-wrapper">
       {/* <Seo title="Service Provider" /> */}
@@ -185,4 +185,4 @@ const ServiceProvider = () => {
   );
 };
 
-export default ServiceProvider;
+export default Home;

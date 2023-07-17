@@ -34,13 +34,14 @@ $roxo-color: #825BFF;
   --bs-accordion-bg: transparent;
 }
 
-.verde { color: var(--verde-color);}
-.roxo { color: var(--roxo-color);}
-.white { color: #fff; } 
+.verde { color: var(--verde-color) !important;}
+.roxo { color: var(--roxo-color) !important;}
+.white { color: #fff !important;}
 
 body { font-family: "Inter";  }
 h1, h2, h3, h4, h5, h6 { font-family: "Faktum";  }
 
+.theme-main-menu { background: #fff; }
 .theme-main-menu.sticky-menu.fixed {  padding-top: 0; }
 .bg-roxo {  background-color: var(--roxo-color); }
 
@@ -282,10 +283,18 @@ footer .logo small {
 
 .title-style-five .title, .title-style-one .title {
   font-family: "Faktum";
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+}
+
+.title-style-five h1.title, .title-style-one h1.title {
+  font-family: "Faktum";
+  font-size: 48px;
   line-height: 1.18em;
   margin-bottom: 20px;
 }
+
 
 .fancy-banner-one p {
   font-size: 15px;
@@ -309,7 +318,8 @@ footer .logo small {
   background: white;
   font-weight: 300;
 }
-
+.btn-branco {  border: 1px solid #fff;  color: #fff;  background: transparent;}
+.btn-roxo_transp {  border: 1px solid var(--roxo-color);  color: var(--roxo-color);  background: transparent;}
 
 
 
@@ -382,6 +392,8 @@ footer .logo small {
 .vcamp-text-block-three .menu-column:hover { background-color: var(--roxo-color); color:white; }
 
 .vcamp-text-block-three .col-4 {padding: 20px;}
+.text-block-three .col-4 {padding: 20px;}
+
 .vcamp-text-block-three .col-4:first-child, .vcamp-text-block-three .col-4:nth-child(2) {
   border-right-width: 0 !important;
   border-width: 1px;
@@ -428,6 +440,7 @@ footer .logo small {
 
 
 .vcamp-text-block-three {  padding: 200px 0 100px; }
+.text-block-three {  padding: 200px 0 100px; }
 
 
 .scroll-top {  background: var(--verde-color); }
@@ -491,6 +504,8 @@ height: 32px;
 .fancy-banner-ten .btn-branco { width: 250px;}
 .bkgimg-section {  position: relative;  padding: 225px 0 185px;  margin-top: -135px;  z-index: 1;}
 .bkgimg-section.quem { background: url("../assets/images/assets/quem_bkg@2x.jpg") center center /cover; margin-top: -250px; }
+.bkgimg-section.fale { background: url("../assets/images/assets/fale@2x.jpg") center center /cover; margin-top: -250px; }
+.bkgimg-section.carreira { background: url("../assets/images/assets/carreira@2x.jpg") center center /cover; margin-top: -250px; }
 
 .bg-darkgradient {background: rgb(130,91,255);background: linear-gradient(180deg, rgba(130,91,255,1) 0%, rgba(11,20,47,1) 71%);}
 .bg-darkgradient .btn-branco {  border: 1px solid #fff;  color: #fff;  background: transparent;}
@@ -508,3 +523,94 @@ height: 32px;
   border:1px solid #E6E6E6;}
 
 .upload-box { background: white; border-radius: 25px; text-align: center; padding: 25px; width: 80%;}
+
+
+#glossario h3 {  padding: 0 20%; }
+.card-style-three {  padding-right: 50px; }
+.card-style-three ul li { cursor: pointer; border-bottom:1px solid #D1D1D1; padding-bottom: 10px; }
+
+
+.text-block-three.produto .menu-column {
+  padding: 5% 10%;
+}
+.text-block-three.produto .menu-column:hover {
+  background-color: transparent;
+}
+.text-block-three .col-12 {padding: 20px;}
+.text-block-three .col-12:first-child {
+  border-right-width: 0 !important;
+  border-width: 1px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(
+    to top, 
+    #445DAA, 
+    rgba(255, 255, 255, 0)
+  ) 1 100%;
+}
+
+.text-block-three .col-12:nth-child(2) {
+    border-style: solid;
+    border-image: linear-gradient(to right, #445DAA, rgba(0, 0, 0, 0)) 1;
+    border-right-width: 0 !important;
+    border-left-width: 1px !important;
+    border-width: 1px;
+    border-top-width: 0 !important;
+}
+
+.text-block-three .col-12:last-child {
+  border-right-width: 0 !important;
+  border-width: 1px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(
+    to bottom, 
+    #445DAA, 
+    rgba(255, 255, 255, 0)
+  ) 1 100%;
+}
+
+.produto-pill::before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 30px;
+  left: 45px;
+  background: url("../assets/images/icon/produto-pill.svg") center center/cover;
+  transition: 0.4s;
+  margin-top: 5px;
+}
+
+
+.menusolucoes .w20:first-child {
+  margin-right: 8px;
+}
+.menusolucoes .w20 {
+  width: 19.8%;
+  border-right: 1px solid #E6E6E6;
+  cursor: pointer;
+}
+
+.menusolucoes .menu-column {  padding: 10%; }
+
+.menusolucoes  {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  right: 17%;
+  left: 17%;
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  border: 10px solid white;
+  padding: 0 3px !important;
+  margin-top: -300px;
+  z-index: 9;
+  position: absolute;
+  background: white;
+}
+
+.menusolucoes .w20 .menu-column:hover {  background-color: var(--verde-color); }
+
+.user-data-page .form-wrapper .header-info a {  color: var(--verde-color);  }
+.user-data-page .form-wrapper h2 span:before {  background: var(--verde-color); }
+.user-data-page .go-back-button:hover {color: var(--verde-color);}
+.user-data-page .go-back-button {  font-family: "inter";}

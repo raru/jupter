@@ -3,15 +3,18 @@ import { Routes, Route } from "react-router-dom";
 
 // All Home Version
 import ScrollTopBehaviour from "../components/elements/ScrollTopBehaviour";
-import CreativeAgency from "../pages/home-pages/CreativeAgency";
-import Business from "../pages/home-pages/Business";
+import QuemSomos from "../pages/home-pages/QuemSomos";
+import Solucao from "../pages/home-pages/Solucao";
+import Analise from "../pages/home-pages/Analise";
+import Carreira from "../pages/home-pages/Carreira";
+import FaleConosco from "../pages/home-pages/FaleConosco";
+import Glossario from "../pages/home-pages/Glossario";
 import AgencyMinimal from "../pages/home-pages/AgencyMinimal";
-import ServiceProvider from "../pages/home-pages/ServiceProvider";
-import ServiceProvider2 from "../pages/home-pages/ServiceProviderCopy";
+import Home from "../pages/home-pages/Home";
+import Produtos from "../pages/home-pages/Produtos";
 import Startup from "../pages/home-pages/Startup";
 import StartupAgency from "../pages/home-pages/StartupAgency";
 import ConsultingAgency from "../pages/home-pages/ConsultingAgency";
-import PhotographerPortfolio from "../pages/home-pages/PhotographerPortfolio";
 import DesignerPortfolio from "../pages/home-pages/DesignerPortfolio";
 import MarketingAgency from "../pages/home-pages/MarketingAgency";
 import DesignAgencyPortfolio from "../pages/home-pages/DesignAgencyPortfolio";
@@ -75,7 +78,7 @@ import ProductDetails from "../pages/inner-pages/shop/shop-elements/ProductDetai
 import Cart from "../pages/inner-pages/shop/shop-elements/Cart";
 import WishList from "../pages/inner-pages/shop/shop-elements/WishList";
 import CheckOut from "../pages/inner-pages/shop/shop-elements/CheckOut";
-import SignIn from "../pages/inner-pages/shop/shop-elements/SignIn";
+import SignIn from "../components/service-provider/SignIn";
 import SignUp from "../pages/inner-pages/shop/shop-elements/SignUp";
 import UiMenuV4 from "../pages/inner-pages/elements/basic/UiMenuV4";
 
@@ -124,14 +127,17 @@ const AllRoutes = () => {
       <ScrollTopBehaviour />
       <Routes>
         {/* All home */}
-        <Route path="/" element={<ServiceProvider />} />
-        <Route path="/business" element={<Business />} />
-        <Route path="/agency-minimal" element={<AgencyMinimal />} />
-        <Route path="/service-provider-3" element={<ServiceProvider2 />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/quem-somos" element={<QuemSomos />} />
+        <Route path="/solucao" element={<Solucao />} />
+        <Route path="/analise" element={<Analise />} />
+        <Route path="/carreira" element={<Carreira />} />
+        <Route path="/fale-conosco" element={<FaleConosco />} />
+        <Route path="/produtos" element={<Produtos />} />
         <Route path="/startup" element={<Startup />} />
         <Route path="/startup-agency" element={<StartupAgency />} />
         <Route path="/consulting-agency" element={<ConsultingAgency />} />
-        <Route path="/photographer-portfolio" element={<PhotographerPortfolio />} />
+        <Route path="/glossario" element={<Glossario />} />
         <Route path="/designer-portfolio" element={<DesignerPortfolio />} />
         <Route path="/marketing-agency" element={<MarketingAgency />} />
         <Route path="/design-agency-portfolio"  element={<DesignAgencyPortfolio />}/>
@@ -247,11 +253,11 @@ const AllRoutes = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/checkout" element={<CheckOut />} />
-        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/area-cliente" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
 
         {/* <Route path="*" element={<NotFound />} /> */}
-        <Route path="*" element={<ServiceProvider />} />
+        <Route path="*" element={<Home />} />
 
       </Routes>
     </>

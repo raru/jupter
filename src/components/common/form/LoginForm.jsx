@@ -9,17 +9,17 @@ const LoginForm = () => {
       <div className="row">
         <div className="col-12">
           <div className="input-group-meta mb-30">
-            <label>Email</label>
-            <input type="email" placeholder="rshdkabir@gmail.com" required />
+            <label>E-mail</label>
+            <input type="email" placeholder="seuemail@gmail.com" required />
           </div>
         </div>
 
         <div className="col-12">
           <div className="input-group-meta mb-25">
-            <label>Password</label>
+            <label>Senha</label>
             <input
               type={password ? "password text" : "password"}
-              placeholder="Enter Password"
+              placeholder="insira sua senha"
               className="pass_log_id"
               required
             />
@@ -43,15 +43,15 @@ const LoginForm = () => {
           <div className="agreement-checkbox d-flex justify-content-between align-items-center">
             <div>
               <input type="checkbox" id="remember" />
-              <label htmlFor="remember">Keep me logged in</label>
+              <label htmlFor="remember">manter logado</label>
             </div>
-            <a href="#">Forget Password?</a>
+            <a href="#">Esqueci a senha?</a>
           </div>
           {/* <!-- /.agreement-checkbox --> */}
         </div>
 
         <div className="col-12">
-          <button className="theme-btn-one w-100 mt-50 mb-50">Login</button>
+          <button className="theme-btn-one w-100 mt-50 mb-50 btn-roxo">Login</button>
         </div>
       </div>
     </form>

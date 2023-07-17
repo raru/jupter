@@ -79,7 +79,7 @@ const Header = ({ className = "" }) => {
 
           <div className="right-widget d-flex align-items-center">
             {/* <Link to="/sign-in" className="d-flex align-items-center login-btn"> */}
-            <Link to="/" className="d-flex align-items-center login-btn">
+            <Link to="/area-cliente" className="d-flex align-items-center login-btn">
                 <span>Área do Cliente</span>
             </Link>
             {/* End .sidebar-nav-button */}

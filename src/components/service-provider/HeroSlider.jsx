@@ -53,9 +53,9 @@ const HeroSlider = () => {
 
       <div className="col-md-6">
         <div className="title-style-five white-vr">
-          <h2 className="title mt-20">
+          <h1 className="title mt-20">
           {item.title}
-          </h2>
+          </h1>
           <p className="mt-30">{item.descriptions}</p>
           <Link to="/sign-in" className="btn-branco btn-branco_transparente">
               <span className="m-0">Fale com a gente</span>

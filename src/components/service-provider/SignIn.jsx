@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../../../assets/images/assets/ils_05.png";
-import LoginForm from "../../../../components/common/form/LoginForm";
-import Seo from "../../../../components/common/seo/Seo";
+import img1 from "../../assets/images/assets/quem_destaque@2x.png";
+import LoginForm from "../common/form/LoginForm";
+import Seo from "../common/seo/Seo";
 
 const SignIn = () => {
   return (
@@ -13,17 +13,8 @@ const SignIn = () => {
       <div className="user-data-page clearfix d-md-flex">
         <div
           className="illustration-wrapper d-none d-md-flex align-items-center justify-content-between flex-column"
-          style={{ background: "#F9F5F0" }}
+          style={{ background: "#825BFF" }}
         >
-          <div className="row">
-            <div className="col-xxl-8 col-xl-11 m-auto">
-              <blockquote>
-                "It is better to fail in originality than to succeed in
-                imitation."
-              </blockquote>
-              <span className="bio">— Herman Melville</span>
-            </div>
-          </div>
           <div className="illustration-holder">
             <img
               src={img1}
@@ -40,7 +31,7 @@ const SignIn = () => {
               <Link to="/">
                 <img
                   src={
-                    require("../../../../assets/images/logo/vCamp_01.svg")
+                    require("../../assets/images/logo/jupter_logotipo.svg")
                       .default
                   }
                   alt=""
@@ -49,23 +40,21 @@ const SignIn = () => {
               </Link>
             </div>
             <Link to="/" className="go-back-button">
-              Go to home
+              Voltar
             </Link>
           </div>
           {/* logo and hom route */}
 
           <div className="user-data-form mt-80 lg-mt-50">
-            <h2 className="font-recoleta">
-              Hi <span>buddy</span>, welcome <br /> Back!
+            <h2>
+              Olá <span className="verde">cliente</span>, acesse <br /> seu painel!
             </h2>
             <p className="header-info pt-20 pb-50 lg-pb-30">
-              Still don't have an account? <Link to="/sign-up">Sign up</Link>
+              Ainda não tem conta? <Link to="/">Cadastre-se</Link>
             </p>
 
             <LoginForm />
-            <p className="text-center copyright-text">
-              Copyright @2022 vcamp inc.
-            </p>
+
             {/* End form */}
           </div>
           {/* End user-data-from */}
