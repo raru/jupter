@@ -4,13 +4,13 @@ import { Helmet } from "react-helmet-async";
 const Seo = ({ title }) => {
   return (
     <Helmet>
-      <title>{title} || React Creative Agency & React Portfolio Template</title>
+      <title>{title} || jupter energy - soluções em energia. energia em soluções.</title>
       <meta
         name="description"
-        content="Web site created using create-react-app"
+        content=" Uma empresa pensada para cuidar da energia da sua empresa, com soluções personalizadas. E sempre cheias de energia."
       />
-      <link rel="canonical" href="https://themeforest.net/user/ib-themes" />
-      <meta property="og:title" content="A very important title" />
+      <link rel="canonical" href="https://jupter.com" />
+      <meta property="og:title" content="soluções em energia. energia em soluções" />
     </Helmet>
   );
 };
