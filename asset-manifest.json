@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jupter/static/css/main.828bc2cd.css",
+    "main.css": "/jupter/static/css/main.974abb7b.css",
     "main.js": "/jupter/static/js/main.bf72a2d7.js",
     "static/media/top-view-6s.mp4": "/jupter/static/media/top-view-6s.e29f188f687488af09f0.mp4",
     "static/media/aerial-top-6s.mp4": "/jupter/static/media/aerial-top-6s.4385c7119cb963796d18.mp4",
@@ -201,7 +201,7 @@
     "static/media/icon_77.svg": "/jupter/static/media/icon_77.e206c8eee3a758dc615a.svg"
   },
   "entrypoints": [
-    "static/css/main.828bc2cd.css",
+    "static/css/main.974abb7b.css",
     "static/js/main.bf72a2d7.js"
   ]
 }
