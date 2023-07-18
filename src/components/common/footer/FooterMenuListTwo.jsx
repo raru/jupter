@@ -23,7 +23,7 @@ const FooterMenuListTwo = ({ className = "" }) => {
     <>
       {footerMenuContent.map((menuItem) => (
         <div
-          className={`col-lg-2 col-md-3 col-sm-6 offset-md-4 mb-40`}
+          className={`col-lg-2 col-md-3 col-sm-6 offset-md-4`}
           key={menuItem.id}
         >
           <ul className="footer-list style-none">
@@ -36,7 +36,7 @@ const FooterMenuListTwo = ({ className = "" }) => {
         </div>
       ))}
 
-      <div className="col-lg-2 col-md-3 mb-40">
+      <div className="col-lg-2 col-md-3">
             <Link to="/" className="btn-roxo">
               <span>Área do Cliente</span>
             </Link>

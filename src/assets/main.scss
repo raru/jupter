@@ -38,20 +38,29 @@ $roxo-color: #825BFF;
 .roxo { color: var(--roxo-color) !important;}
 .white { color: #fff !important;}
 
-body { font-family: "Inter";  }
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  position: relative;
+  line-height: 1.66em;
+  color: var(--text-color);
+}
+
 h1, h2, h3, h4, h5, h6 { font-family: "Faktum";  }
 .h3, h3 {  font-size: 32px; }
-.theme-main-menu { background: #fff; }
+.theme-main-menu { background: #fff; padding: 0; }
 .theme-main-menu.sticky-menu.fixed {  padding-top: 0; }
 .bg-roxo {  background-color: var(--roxo-color); }
-
+.pr30 {
+    padding-right: 30%;
+}
 
 .header-top {  background: $dark-color;  color: white;	font-family: "Inter";  font-size: .6em;  height: 30px;  padding: 0 115px;}
 
 
 /* The switch - the box around the slider */
-.switch {
-  position: relative;
+.switch {  position: relative;
   display: inline-block;
   width: 45px;
   height: 17px;
@@ -167,6 +176,26 @@ font-family: 'Inter', sans-serif;
     color: var(--roxo-color);
 }  
 
+.theme-menu-five .navbar .navbar-nav .nav-link {
+  // font-family: "gorditaregular";
+  font-family: "Inter";
+  // font-family: 'Faktum';
+  font-size: 18px;
+  color: #fff;
+  margin: 0 15px;
+}
+
+.theme-menu-one .right-widget .login-btn span {
+  font-family: "Faktum";
+  font-size: 13px;
+  /* font-weight: 300; */
+  margin: 0 0 0 12px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  background: var(--roxo-color);
+}
 
   .pl-15 { padding-left: 15px; }
 
@@ -200,7 +229,9 @@ footer .logo small {
   line-height: 1.5em;
   display: block;
 }
-
+.vcamp-footer-two.dark-footer {
+  background: #0B142F;
+}
 .vcamp-footer-two.dark-footer {
   background: #0B142F;
 }
@@ -215,19 +246,6 @@ footer .logo small {
   text-decoration: none;
   color: var(--roxo-color);
 }
-
-.btn-roxo span {
-  font-family: "Faktum";
-  font-size: 12px;
-  margin: 0 0 0 12px;
-  padding: 12px 18px;
-  border-radius: 30px;
-  transition: all 0.3s ease-in-out;
-  color: white;
-  background: var(--roxo-color);
-  font-weight: 300;
-}
-.btn-roxo span:hover {   background: var(--verde-color); }
 
 
 .vcamp-footer-two.dark-footer .bottom-footer {
@@ -265,10 +283,19 @@ footer .logo small {
   overflow: hidden;
 }
 
+.quem .video_holder {
+  width: 415px; }
+
 .video_holder video {
   position: relative;
-  top: -30px;
+  top: 30px;
   background-color: #825BFF;
+}
+
+.video_mask_inside {
+  width: 180%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .logo_mask {
@@ -283,7 +310,13 @@ footer .logo small {
   -webkit-mask-size: 100%;
   mask-size: 100%;
 
-  margin-top: -150px;
+  margin-top: -100px;
+}
+
+.quem .logo_mask {
+  display: inline-block;
+  -webkit-mask-image: url('../assets/images/assets/quem_bolinha-mask.svg');
+  mask-image: url('../assets/images/assets/quem_bolinha-mask.svg');
 }
 
 .video_bolinhas {
@@ -293,18 +326,32 @@ footer .logo small {
   margin-left: 10px;
 }
 
+
+.quem .video_bolinhas.video_bolinhas-verde {
+    margin-top: -315px;
+    width: 176px;
+    margin-left: 231px;
+}
+
+
+.quem .video_bolinhas.video_bolinhas-branca {
+  margin-top: -351px;
+  width: 246px;
+  margin-left: -28px;
+}
+
 .title-style-five .title, .title-style-one .title {
   font-family: "Faktum";
   font-size: 32px;
   line-height: 1.1em;
-  margin-bottom: 20px;
+  // margin-bottom: 10px;
 }
 
 .title-style-five h1.title, .title-style-one h1.title {
   font-family: "Faktum";
   font-size: 48px;
   line-height: 1.18em;
-  margin-bottom: 20px;
+  // margin-bottom: 10px;
 }
 
 
@@ -316,9 +363,21 @@ footer .logo small {
   padding: 24px 0;
 }
 
+.btn-roxo span {
+  font-family: "Inter";
+  font-size: 12px;
+  margin: 0 0 0 12px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  background: var(--roxo-color);
+  font-weight: 300;
+}
+.btn-roxo span:hover {   background: var(--verde-color); }
 
 .btn-branco {
-  font-family: "Faktum";
+  font-family: "Inter";
   font-size: 12px;
   // text-transform: uppercase;
   margin: 12px 0;
@@ -330,9 +389,16 @@ footer .logo small {
   background: white;
   font-weight: 300;
 }
-
-
-
+.btn-branco_transparente  {  border: 1px solid #ffffff;  background: transparent;  color: #fff; }
+.bg-darkgradient .btn-branco {  border: 1px solid #fff;  color: #fff;  background: transparent; }
+.fancy-banner-ten .btn-branco {      border: none;      width: 295px;      text-transform: inherit;  }  
+.fancy-banner-ten .btn-branco:hover {  background-color: var(--verde-color); }
+.btn-migalha  {  font-size: 10px;  padding: 4px 20px;  text-transform: uppercase;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  line-height: 1.6em;
+ }
 
 .vcamp-text-block-five { background-color: var(--dark-color); padding: 10% 0; }
 .vcamp-text-block-five .title-style-five.white-vr .title {  color: #fff;  }
@@ -343,7 +409,7 @@ footer .logo small {
   font-weight: 100;
   line-height: 1.75em;
   color: white;
-  padding: 24px 0;
+  padding: 10px 0 20px;
 }
 
 .btn-roxo_branco span {
@@ -351,14 +417,7 @@ footer .logo small {
   background: white;
 }
 
-.btn-branco_transparente, .btn-branco  {
-  border: 1px solid #ffffff;
-  background: transparent;
-  color: #fff;
-  font-size: 10px;
-  padding: 1px 27px;
-  text-transform: uppercase;
-}
+
 .btn-roxo_transp {  border: 1px solid var(--roxo-color);  color: var(--roxo-color);  background: transparent;}
 
 .btn-rounded_black {
@@ -403,11 +462,14 @@ footer .logo small {
 .text-block-three .img-container:before {
   background: none;
 }
-.text-block-three .menu-column {  padding:10%; }
+.text-block-three .menu-column {
+  padding: 15%;
+  font-size: 18px;
+}
 .text-block-three .menu-column:hover { background-color: var(--roxo-color); color:white; }
-
-.text-block-three .box-solucao {padding: 20px;}
-.text-block-three .box-solucao {padding: 20px;}
+.text-block-three .box-solucao {
+  padding: 12px;
+}
 
 .text-block-three .box-solucao:first-child, .text-block-three .box-solucao:nth-child(2) {
   border-right-width: 0 !important;
@@ -462,23 +524,23 @@ footer .logo small {
 
 
 
-.text-block-three
-.switch {
-width: 80px;
-height: 32px;
+.text-block-three .switch {
+  height: 32px;
+  width: 85px;
 }
 
 .text-block-three .slider:before {
-  height: 26px;
-  width: 26px;
-  right: 5px;
   bottom: 2px;
+  height: 28px;
+  right: 2px;
+  width: 28px;
 }
 
-.text-block-three input:checked + .text-block-three .slider:before {
-  -webkit-transform: translateX(-43px) !important;
-  -ms-transform: translateX(-43px) !important;
-  transform: translateX(-43px) !important;
+.text-block-three input:checked+.slider:before {
+  background-color: #8de85b;
+  background-color: var(--verde-color);
+  -webkit-transform: translateX(-16px);
+  transform: translateX(-52px);
 }
 
 
@@ -516,21 +578,7 @@ height: 32px;
   margin-top: -100px;
 }
 
-.fancy-banner-ten .btn-branco {
-  font-family: "Faktum";
-      font-size: 12px;
-      margin: 12px 0;
-      padding: 10px 30px;
-      border-radius: 30px;
-      border: none;
-      transition: all 0.3s ease-in-out;
-      color: #0B142F;
-      background: white;
-      font-weight: 300;
-      width: 295px;
-      text-transform: inherit;
-  }  
-  .fancy-banner-ten .btn-branco:hover {  background-color: var(--verde-color); }
+
 
 .bkgimg-section {  position: relative;  padding: 225px 0 185px;  margin-top: -135px;  z-index: 1;}
 .bkgimg-section.quem { background: url("../assets/images/assets/quem_bkg@2x.jpg") center center /cover; margin-top: -250px; }
@@ -538,21 +586,20 @@ height: 32px;
 .bkgimg-section.carreira { background: url("../assets/images/assets/carreira@2x.jpg") center center /cover; margin-top: -250px; }
 
 .bg-darkgradient {background: rgb(130,91,255);background: linear-gradient(180deg, rgba(130,91,255,1) 0%, rgba(11,20,47,1) 71%);}
-.bg-darkgradient .btn-branco {  border: 1px solid #fff;  color: #fff;  background: transparent;}
 .bg-darkgradient .title-style-five.white-vr .title {  color: white; }
 .bg-darkgradient p { color: white; font-size: 16px; }
 .bg-darkgradient .logo_mask {  margin-top: 0px; }
 
 
-
-
 .contact-section-one {    z-index: 9;    position: relative; }
+.contact-section-one .img-n3 { margin-top: --20vw;}
+
 .form-style-one {  background: transparent;  padding: 0;  margin-right: 145px; }
 .theme-btn-one-roxo {  font-family: "faktum" !important;  font-size: 17px !important;  color: #fff !important; background: var(--roxo-color) !important;}
 .form-style-one .input-group-meta input, .form-style-one .input-group-meta textarea, .form-style-one .input-group-meta select, .form-style-three .input-group-meta select {
   border:1px solid #E6E6E6;}
 
-.upload-box { background: white; border-radius: 25px; text-align: center; padding: 25px; width: 80%;}
+.upload-box { background: white; border-radius: 25px; text-align: center; padding: 25px;}
 
 
 #glossario h3 {  padding: 0 20%; }
@@ -676,74 +723,17 @@ height: 32px;
 
 
 
-
-
-
-@media (max-width: 991px) {
-
-  body {    font-size: 12px;}
-  .container, .container-fluid {
-    padding-right: calc(var(--bs-gutter-x) * 1);
-    padding-left: calc(var(--bs-gutter-x) * 1); }
-  .hero-content, .hero-content .title-style-five.white-vr .title, .hero-content p {    padding-right: 0; }  
-  .theme-main-menu, .theme-main-menu.theme-menu-six {    padding: 0; }
-  .header-top {
-      padding: 0;
-      text-align: center;
-  }
-  
-  header .inner-content {
-      padding: 20px 10px;
-  }
-  
-  .navbar-toggler {
-      right: 15px;
-  }
-
-  .navbar .dropdown-menu {
-    font-size: 13px;
-    box-shadow: 0 3px 50px 10px rgba(0, 0, 0, 0.1);
+.video-wrapper {
+  max-width: 1140px;
 }
 
-.navbar .dropdown-menu .w20 {
-  width: 48%;
-  border-right: none;}
-  
-  .hero_slider_two .slider-inner {
-      padding: 20px 15px 20px;
-  }
-  .bg-darkroxo {
-    padding: 20px 15px 20px;
+.video-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  max-height: 790px;
+  overflow: hidden;
+  background: #fff;
 }
-  .title-style-five h1.title, .title-style-one h1.title {
-      font-size: 28px;
-      }
-  
-  
-  .text-block-three, .text-block-three {
-      padding: 100px 0 50px;
-  }
-  
-  .title-style-five .title, .title-style-one .title {
-      font-size: 22px;
-  }
-  
-  .logo_mask {
-      margin-top: 50px;
-      }
-  
-  .video_holder {
-      height: 355px;
-      width: 345px;
-  }
-  
-  .video_bolinhas {
-      margin-left: 10px;
-      margin-top: -267px;
-      width: 325px;
-  }
-  
-  .pl-15 { padding-right: 0; padding-left: 0;}
-  
-  
-  }
+
+
+

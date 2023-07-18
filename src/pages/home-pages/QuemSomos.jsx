@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CounterUp from "../../components/business/CounterUp";
 import Header from "../../components/business/Header";
+import Footer from "../../components/common/footer/Footer";
 import Hero from "../../components/business/Hero";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import TextBlockVideo from "../../components/business/TextBlockVideo";
@@ -9,12 +10,12 @@ import FeatureSectionTwo from "../../components/business/FeatureSectionTwo";
 import Seo from "../../components/common/seo/Seo";
 import img2 from "../../assets/images/assets/quem_hero-img2@2x.png";
 import FancyBanner from "../../components/service-provider/FancyBanner";
-import FooterMenuListTwo from "../../components/common/footer/FooterMenuListTwo";
+import quem_video2 from '../../assets/images/media/top-view-6s.mp4'
 
 
 const QuemSomos = ({ className = "quem" }) => {
   return (
-    <div className="main-page-wrapper">
+    <div className={`main-page-wrapper ${className}`}>
       <Seo title="QuemSomos" />
       {/* End Seo Related data */}
 
@@ -46,12 +47,35 @@ const QuemSomos = ({ className = "quem" }) => {
 
       <div className="partner-slider-one mt-n2">
         <div className="container">
-        <img
+        {/* <img
                 src={img2}
                 alt="hero"
                 width="40%"
               />  
-        </div>
+ */}
+
+<div className="logo_mask mt-n6">
+  <div className="video_holder">
+    <div className="video_mask_inside">
+    <video muted="muted" autoPlay={"autoplay"} loop>
+      <source
+        // src="https://creativegigstf.com/video/intro_3.mp4"
+        src={quem_video2}        
+        type="video/mp4"
+      />
+    </video>
+    </div>
+  </div>
+</div>
+
+<img
+src={require("../../assets/images/assets/quem_bolinha-esq.svg").default}
+alt="bolinha"
+className="video_bolinhas  video_bolinhas-branca"
+/>
+
+</div>
+
       </div>
       {/* <!-- /.partner-slider-one --> */}
 
@@ -153,7 +177,6 @@ Conheça nossas soluções
 
 
 
-
       {/* <!--
 			=====================================================
 				Footer
@@ -161,54 +184,8 @@ Conheça nossas soluções
 			--> */}
       <footer className="vcamp-footer-two dark-footer pt-50 lg-pt-30">
         <div className="container">
-          <div className="row">
-            <div className="col-xl-4 col-lg-3 mb-40">
-              <div className="logo">
-                <Link to="/">
-                  <img
-                    src={
-                      require("../../assets/images/logo/jupter_logotipo-branco.svg").default
-                    }
-                    alt="jupter energy"
-                    width="165"
-                  />
-                </Link>
-                <br/>
-                <small className="mt-10">R. Desembargador Eliseu Guilherme, 53/69 - Cj. 62 <br/>CEP 04004-030 – Paraíso – São Paulo – SP</small>
-              </div>
-            </div>
-            {/* End .col */}
-
-            <FooterMenuListTwo />
-          </div>
+          <Footer />
         </div>
-        {/* End .container */}
-
-        <div className="container">
-          <div className="bottom-footer">
-            {/* <CopyrightFooter /> */}
-
-            <div className="row  align-items-center">
-              <div className="col-md-auto mb-15">Soluções em energia.</div>
-              <div className="col mb-15"> 
-                    <div className="barra">
-                      <div id="barra_bolinha">
-                        <img
-                        src={
-                          require("../../assets/images/assets/footer_bolinha-roxa.svg").default
-                        }
-                        alt="jupter energy"
-                        width="15px"
-                        />
-                      </div>
-                    </div>
-              </div>
-              <div className="col-md-auto mb-15">Energia em soluções.</div>      
-            </div>
-
-          </div>
-        </div>
-        {/* End .container */}
       </footer>
 
 

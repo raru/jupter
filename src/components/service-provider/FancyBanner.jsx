@@ -7,7 +7,7 @@ const FancyBanner = () => {
     <>
       <div className="col-md-5">
         <div className="title-style-five white-vr">
-          <span className="btn-branco">análise de viabilidade</span>
+          <span className="btn-branco btn-migalha">análise de viabilidade</span>
           <h2 className="title mt-20">
           A Jupter Energy pode gerar até 30% de economia com seu gasto de energia elétrica.
           </h2>
@@ -23,15 +23,21 @@ const FancyBanner = () => {
 
 <div className="logo_mask mt-n6">
   <div className="video_holder">
-    <video width="100%" height="100%" controls autoPlay loop muted>
-      <source src={video} type="video/mp4"/>
+    <div className="video_mask_inside">
+    <video muted="muted" autoPlay={"autoplay"} loop>
+      <source
+        // src="https://creativegigstf.com/video/intro_3.mp4"
+        src={video}        
+        type="video/mp4"
+      />
     </video>
+    </div>
   </div>
 </div>
 
 <img
                 src={require("../../assets/images/assets/video_bolinha.svg").default}
-                alt="brand"
+                alt="bolinha"
                 className="video_bolinhas"
               />
 

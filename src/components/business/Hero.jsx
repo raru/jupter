@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SubscribeForm from "../common/form/SubscribeForm";
-import Partners from "./Partners";
 import img1 from "../../assets/images/assets/quem_hero-img1@2x.png";
+import video from '../../assets/images/media/solar-energy-6s.mp4'
+
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="container">
         <div className="row align-items-center">
         <div className="col-md-6">
-          <Link to="/" className="btn-branco btn-branco_transparente">
+          <Link to="/" className="btn-branco btn-migalha">
               <span className="m-0">quem somos</span>
             </Link>          
         <div className="title-style-five white-vr">
@@ -26,11 +26,35 @@ const Hero = () => {
         </div>
       </div>
       <div className="col offset-md-1">
-      <img
+      {/* <img
                 src={img1}
                 alt="hero"
                 width="90%"
-              />        
+              />     */}
+
+<div className="logo_mask mt-n6">
+  <div className="video_holder">
+    <div className="video_mask_inside">
+    <video muted="muted" autoPlay={"autoplay"} loop>
+      <source
+        // src="https://creativegigstf.com/video/intro_3.mp4"
+        src={video}        
+        type="video/mp4"
+      />
+    </video>
+    </div>
+  </div>
+</div>
+<img
+src={require("../../assets/images/assets/quem_bolinha-dir.svg").default}
+alt="bolinha"
+className="video_bolinhas  video_bolinhas-verde"
+/>
+          {/* End .col */}
+
+
+
+                  
       </div>
 
           {/* End .col */}

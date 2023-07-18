@@ -5,6 +5,7 @@ import CounterUp from "../../components/business/CounterUp";
 import FeatureSectionOne from "../../components/business/FeatureSectionOne";
 import FeedbackSliderOne from "../../components/business/FeedbackSliderOne";
 import Header from "../../components/business/Header";
+import Footer from "../../components/common/footer/Footer";
 import Hero from "../../components/business/Hero";
 import TextBlockOne from "../../components/business/TextBlockOne";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";

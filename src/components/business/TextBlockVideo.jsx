@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/assets/ils_02.png";
-import video from '../../assets/images/media/video.mp4'
+import quem_img from '../../assets/images/assets/quem_img@2x.png'
 
 const TextBlockVideo = () => {
   const [isOpen, setOpen] = useState(false);
@@ -10,7 +9,7 @@ const TextBlockVideo = () => {
     <>
     {/* End ModalVideo */}
     <div className="row align-items-center">
-    <div className="col-xxl-5 col-lg-5" data-aos="fade-left">
+    <div className="col-xxl-5 col-lg-4  offset-1" data-aos="fade-left">
     <div className="text-wrapper ps-xxl-5 pt-0 md-pb-40">
 
     <div className="title-style-five white-vr">
@@ -26,19 +25,19 @@ const TextBlockVideo = () => {
     </div>
     {/* End .col */}
     
-    <div className="col-xxl-6 col-lg-4 offset-1" data-aos="fade-right">
-    <div className="logo_mask mt-n6">
-<div className="video_holder">
-    <video width="960" height="540" controls autoPlay loop muted>
-      <source src={video} type="video/mp4"/>
-    </video>
-  </div>
-</div>
+    <div className="col-xxl-6 col-lg-5" data-aos="fade-right">
+
+    <img
+                src={quem_img}
+                alt="hero"
+                width="100%"
+              />  
+
     </div>
     {/* End .col */}
     
 
-    <div className="col-8" data-aos="fade">
+    <div className="col-9 offset-1" data-aos="fade">
     <div className="text-wrapper ps-xxl-5 pt-0 md-pb-40 mt-30">
     <p><span className="roxo">Tudo isso, porque enxergamos a energia elétrica como um insumo essencial, mas também um aliado poderoso na hora de reduzir os custos do seu negócio.</span>
     Para isso, identificamos padrões no consumo de energia, criamos indicadores de performance e rotinas de acompanhamento a fim de alcançar melhorias operacionais. Ou melhor, reduzir o possível desperdício da energia elétrica.
