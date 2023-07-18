@@ -12,7 +12,7 @@ const FooterMenuListTwo = ({ className = "" }) => {
         { name: "Quem somos", routeLink: "/" },
         { name: "Nossas Soluções", routeLink: "/" },
         { name: "Faça sua análise", routeLink: "/" },
-        { name: "Glossário", routeLink: "/" },
+        // { name: "Glossário", routeLink: "/" },
         { name: "Carreira", routeLink: "/" },
         { name: "Fale conosco", routeLink: "/" },
       ],

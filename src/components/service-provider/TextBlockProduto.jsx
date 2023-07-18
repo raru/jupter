@@ -8,7 +8,7 @@ const TextBlock = () => {
         <div className="text-wrapper">
 
         <div className="title-style-five white-vr">
-          <span className="btn-branco btn-roxo_transp">NOSSAS SOLUÇÕES</span>
+          <span className="btn-branco btn-branco_transparente btn-roxo_transp">NOSSAS SOLUÇÕES</span>
           <h2 className="title mt-20">
           Da redução do preço da energia à redução do consumo de energia.
           </h2>

@@ -53,7 +53,7 @@ const FaleConosco = ({ className = "fale" }) => {
 			--> */}
       <div className="contact-section-one box-layout mt-200 mb-80 lg-mt-130 sm-mb-40">
           <div className="container">
-            <div className="row align-items-center">
+            <div className="row align-items-top">
               <div
                 className="col-xl-5 col-lg-6 order-lg-last ms-auto"
                 data-aos="fade-left"

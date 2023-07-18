@@ -57,10 +57,10 @@ const Analise = ({ className = "quem" }) => {
 
 
               <div className="col-lg-6 contact-section-one mb-80" data-aos="fade-right">
-              <div className="title-style-one">
-                    <h4 className="title white mb-20">
+              <div className="title-style-five">
+                    <h1 className="title white mb-20">
                     Quer uma solução Jupter?
-                    </h4>
+                    </h1>
                   </div>
                   <p className="text-lg white">
                   Nós estamos prontos para atender você ou a sua empresa. Faça o upload da sua fatura e receba uma análise de viabilidade de um projeto ou migração para o mercado livre. Vem com a gente.

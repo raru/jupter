@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import img1 from "../../assets/images/assets/hero_banner-01.jpg";
 import img2 from "../../assets/images/media/img_20.jpg";
 import img3 from "../../assets/images/media/img_21.jpg";
+import video1 from "../../assets/images/media/aerial-top-down-view-of-water.mp4";
 
 const HeroSlider = () => {
   const [isOpen, setOpen] = useState(false);
@@ -42,11 +43,15 @@ const HeroSlider = () => {
         {sliderContent.map((item) => (
           <div className="item" key={item.id}>
             <div className="content-wrapper">
-              <img
+              {/* <img
                 src={item.largeImg}
                 alt="slider avatar"
                 className="hero-img"
-              />
+              /> */}
+
+<video width="100%" height="540" controls autoPlay loop muted>
+      <source src={video1} type="video/mp4"/>
+</video>              
               <div className="slider-inner">
                 <div className="row  align-items-center  hero-content">
 

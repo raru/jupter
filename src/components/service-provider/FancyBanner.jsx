@@ -23,7 +23,7 @@ const FancyBanner = () => {
 
 <div className="logo_mask mt-n6">
   <div className="video_holder">
-    <video width="960" height="540" controls autoPlay loop muted>
+    <video width="100%" height="100%" controls autoPlay loop muted>
       <source src={video} type="video/mp4"/>
     </video>
   </div>

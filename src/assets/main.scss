@@ -40,7 +40,7 @@ $roxo-color: #825BFF;
 
 body { font-family: "Inter";  }
 h1, h2, h3, h4, h5, h6 { font-family: "Faktum";  }
-
+.h3, h3 {  font-size: 32px; }
 .theme-main-menu { background: #fff; }
 .theme-main-menu.sticky-menu.fixed {  padding-top: 0; }
 .bg-roxo {  background-color: var(--roxo-color); }
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 { font-family: "Faktum";  }
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
+  width: 45px;
   height: 17px;
 }
 
@@ -80,13 +80,12 @@ h1, h2, h3, h4, h5, h6 { font-family: "Faktum";  }
 .slider:before {
   position: absolute;
   content: "";
-  height: 13px;
-  width: 13px;
-  right: 4px;
-  bottom: 2px;
+  height: 15px;
+  width: 15px;
+  right: 2px;
+  bottom: 1px;
   background-color: var(--roxo-color);
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -137,13 +136,21 @@ header .inner-content { padding: 5px 60px;}
 
 .navbar .dropdown-menu {
 font-family: 'Inter', sans-serif;
-font-size: 15px;
+// font-size: 15px;
   right: 17%;
   left: 17%;
   box-shadow: 0 10px 30px 20px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
   border: 10px solid white;
   padding: 0 3px !important;
+}
+
+
+.navbar .dropdown-menu .mega-dropdown-list li {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 95%;
+  line-height: 1.2em;
 }
 
   .navbar .dropdown-menu .w20   {
@@ -174,6 +181,11 @@ font-size: 15px;
 
 .hero-banner-four {
   margin: 110px 0 -100px;
+  background: #0B142F;
+}
+
+.hero-banner-four video {
+  opacity: .5;
 }
 
 footer { 
@@ -243,7 +255,7 @@ footer .logo small {
 
 .fancy-banner-one {  background: transparent; }
 .fancy-banner-one:before {  background-color: white; }
-.fancy-banner-one .inner-content {  padding: 5%; }
+.fancy-banner-one .inner-content {  padding: 3% 5% 8%; }
 .title-style-five.white-vr .title {  color: black; }
 
 
@@ -307,10 +319,10 @@ footer .logo small {
 
 .btn-branco {
   font-family: "Faktum";
-  font-size: 10px;
-  text-transform: uppercase;
+  font-size: 12px;
+  // text-transform: uppercase;
   margin: 12px 0;
-  padding: 8px 18px;
+  padding: 10px 30px;
   border-radius: 30px;
   border: 1px solid #0B142F;
   transition: all 0.3s ease-in-out;
@@ -318,8 +330,7 @@ footer .logo small {
   background: white;
   font-weight: 300;
 }
-.btn-branco {  border: 1px solid #fff;  color: #fff;  background: transparent;}
-.btn-roxo_transp {  border: 1px solid var(--roxo-color);  color: var(--roxo-color);  background: transparent;}
+
 
 
 
@@ -340,11 +351,15 @@ footer .logo small {
   background: white;
 }
 
-.btn-branco_transparente {
+.btn-branco_transparente, .btn-branco  {
   border: 1px solid #ffffff;
   background: transparent;
   color: #fff;
+  font-size: 10px;
+  padding: 1px 27px;
+  text-transform: uppercase;
 }
+.btn-roxo_transp {  border: 1px solid var(--roxo-color);  color: var(--roxo-color);  background: transparent;}
 
 .btn-rounded_black {
   border: 1px solid #000;
@@ -427,7 +442,7 @@ footer .logo small {
 }
 
 
-.hero_slider_two .slider-inner {  width: 100%;  right: 0;  padding: 105px 85px 20px 85px; }
+.hero_slider_two .slider-inner {  width: 100%;  right: 0;  padding: 105px 85px 20px 85px; top: 0; }
 .hero_slider_two .slider-inner:before {  background-color: rgba(0,0,0,.1); }
 .hero-content, .hero-content .title-style-five.white-vr .title, .hero-content p { color: #fff; line-height: 1.1em; padding-right: 40px;}
 .hero-content p  {  width: 80%;  font-weight: 100;  line-height: 1.4em; }
@@ -501,7 +516,22 @@ height: 32px;
   margin-top: -100px;
 }
 
-.fancy-banner-ten .btn-branco { width: 250px;}
+.fancy-banner-ten .btn-branco {
+  font-family: "Faktum";
+      font-size: 12px;
+      margin: 12px 0;
+      padding: 10px 30px;
+      border-radius: 30px;
+      border: none;
+      transition: all 0.3s ease-in-out;
+      color: #0B142F;
+      background: white;
+      font-weight: 300;
+      width: 295px;
+      text-transform: inherit;
+  }  
+  .fancy-banner-ten .btn-branco:hover {  background-color: var(--verde-color); }
+
 .bkgimg-section {  position: relative;  padding: 225px 0 185px;  margin-top: -135px;  z-index: 1;}
 .bkgimg-section.quem { background: url("../assets/images/assets/quem_bkg@2x.jpg") center center /cover; margin-top: -250px; }
 .bkgimg-section.fale { background: url("../assets/images/assets/fale@2x.jpg") center center /cover; margin-top: -250px; }
@@ -510,7 +540,7 @@ height: 32px;
 .bg-darkgradient {background: rgb(130,91,255);background: linear-gradient(180deg, rgba(130,91,255,1) 0%, rgba(11,20,47,1) 71%);}
 .bg-darkgradient .btn-branco {  border: 1px solid #fff;  color: #fff;  background: transparent;}
 .bg-darkgradient .title-style-five.white-vr .title {  color: white; }
-.bg-darkgradient p { color: white; font-size: 15px; }
+.bg-darkgradient p { color: white; font-size: 16px; }
 .bg-darkgradient .logo_mask {  margin-top: 0px; }
 
 
@@ -570,6 +600,8 @@ height: 32px;
   ) 1 100%;
 }
 
+.text-block-three .menu-column:hover .produto-pill { color: var(--dark-color); }
+
 .produto-pill::before {
   position: absolute;
   content: "";
@@ -589,6 +621,7 @@ height: 32px;
 .menusolucoes .w20:first-child {
   margin-right: 8px;
 }
+.menusolucoes .w20:last-child { border: none; }
 .menusolucoes .w20 {
   width: 19.8%;
   border-right: 1px solid #E6E6E6;
@@ -614,6 +647,14 @@ height: 32px;
 
 .menusolucoes .w20 .menu-column:hover {  background-color: var(--verde-color); }
 
+.menusolucoes .menu-column .mega-dropdown-list li {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 95%;
+  line-height: 1.2em;
+}
+
+
 .user-data-page .form-wrapper .header-info a {  color: var(--verde-color);  }
 .user-data-page .form-wrapper h2 span:before {  background: var(--verde-color); }
 .user-data-page .go-back-button:hover {color: var(--verde-color);}
@@ -621,6 +662,17 @@ height: 32px;
 
 
 
+.form-style-one label {
+  font-size: 12px;
+  color: #000000;
+}
+.form-style-one .input-group-meta input, .form-style-one .input-group-meta textarea, .form-style-one .input-group-meta select, .form-style-three .input-group-meta select {
+  border: 1px solid #707070;
+  border-radius: 35px;
+}
+.form-style-one button.theme-btn-one {
+  border-radius: 26px;
+}
 
 
 
@@ -691,7 +743,7 @@ height: 32px;
       width: 325px;
   }
   
-  
+  .pl-15 { padding-right: 0; padding-left: 0;}
   
   
   }

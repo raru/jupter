@@ -160,7 +160,7 @@ const MegaMenuOne = () => {
       {/* End portfolio dropdown */}
 
 
-      <li className="nav-item pl-md-15">
+      <li className="nav-item pl-15 pl-md-15">
         <button
           className="nav-link"
         >
@@ -171,7 +171,7 @@ const MegaMenuOne = () => {
       </li>
       {/* End Faça sua análise dropdown */}
 
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <button
           className="nav-link"
         >
@@ -179,7 +179,7 @@ const MegaMenuOne = () => {
           Glossário
           </Link>
         </button>
-      </li>
+      </li> */}
       {/* End Glossário dropdown */}
 
       <li className="nav-item">

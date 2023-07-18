@@ -70,10 +70,10 @@ const Carreira = ({ className = "carreira" }) => {
               {/* End .col */}
 
               <div className="col-lg-6 order-lg-first contact-section-one mb-80" data-aos="fade-right">
-              <div className="title-style-one">
-                    <h4 className="title white mb-20">
+              <div className="title-style-five">
+                    <h1 className="title white mb-20">
                     Quer trabalhar aqui?
-                    </h4>
+                    </h1>
                   </div>
                   <p className="text-lg white mb-40">
                   Mande seu Curriculum, queremos te conhecer.
