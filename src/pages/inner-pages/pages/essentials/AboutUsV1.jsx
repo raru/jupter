@@ -4,15 +4,15 @@ import Sidebar from "../../../../components/common/header/sidebar/Sidebar";
 import Header from "../../../../components/business/Header";
 import CopyrightFooter from "../../../../components/common/footer/CopyrightFooter";
 import FooterMenuList from "../../../../components/common/footer/FooterMenuList";
-import FooterSubscribe from "../../../../components/creative-agency/FooterSubscribe";
+import FooterSubscribe from "../../../../components/service-provider/FooterSubscribe";
 import TextBlockOne from "../../../inner-pages/pages/essentials/components/TextBlockOne";
 import CounterUp from "../../../../components/business/CounterUp";
-import FeatureSlider from "../../../../components/consulting-agency/FeatureSlider";
+import FeatureSlider from "../../../../components/service-provider/FeatureSlider";
 import FeedbackSliderTwo from "../../../../components/business/FeedbackSliderTwo";
 import Partners from "./components/Partners";
 import { Link } from "react-router-dom";
 import Blog from "../../../../components/service-provider/Blog";
-import FancyBanner from "../../../../components/startup/FancyBanner";
+import FancyBanner from "../../../../components/business/FancyBanner";
 import Address from "../../../../components/business/Address";
 import Seo from "../../../../components/common/seo/Seo";
 

@@ -4,7 +4,7 @@ import Sidebar from "../../../../components/common/header/sidebar/Sidebar";
 import Header from "../../../../components/business/Header";
 import CopyrightFooter from "../../../../components/common/footer/CopyrightFooter";
 import FooterMenuList from "../../../../components/common/footer/FooterMenuList";
-import FooterSubscribe from "../../../../components/creative-agency/FooterSubscribe";
+import FooterSubscribe from "../../../../components/service-provider/FooterSubscribe";
 import { Link } from "react-router-dom";
 import Team from "../../../../components/common/team/Team";
 import Seo from "../../../../components/common/seo/Seo";

@@ -1,59 +1,82 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import img1 from "../../assets/images/media/img_05.jpg";
+import img2 from "../../assets/images/media/img_06.jpg";
+import img3 from "../../assets/images/media/img_07.jpg";
 
 const FeedbackSlider = () => {
+  const feebackSliderContent = [
+    {
+      id: 1,
+      img: img1,
+      title: "www.uiart.com",
+    },
+    {
+      id: 2,
+      img: img2,
+      title: "www.todo.com",
+    },
+    {
+      id: 3,
+      img: img3,
+      title: "www.icon8.com",
+    },
+    {
+      id: 4,
+      img: img2,
+      title: "www.todo.com",
+    },
+  ];
+
   //   slider settings
   const settings = {
     dots: true,
     infinite: true,
     speed: 900,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    fade: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
-
-  const feedbackContent = [
-    {
-      id: 1,
-      descriptions: ` We’v 9,000 agents around the io country, Find agents near your
-        neighborhood graphic, print, and publishing industries for
-        previewing layouts .`,
-      name: "Martin Jonas",
-      country: "USA",
-    },
-    {
-      id: 2,
-      descriptions: `Certainly from my perspective, WordPress has been a great success—with WordPress VIP giving us that enterprise-level of assured quality on top.`,
-      name: "Martin Jonas",
-      country: "USA",
-    },
-    {
-      id: 3,
-      descriptions: `Having a home based business makes wonderful asset to your life. The
-        WordPress VIP stands it comes advertise your business at cheap cost.`,
-      name: "Martin Jonas",
-      country: "USA",
-    },
-  ];
 
   return (
     <>
       <Slider {...settings} arrows={false}>
-        {feedbackContent.map((review) => (
-          <div className="item" key={review.id}>
-            <div className="feedback-wrapper">
-              <div className="icon d-flex align-items-center justify-content-center">
-                <img
-                  src={require("../../assets/images/icon/icon_33.svg").default}
-                  alt="icon"
-                />
+        {feebackSliderContent.map((item) => (
+          <div className="item" key={item.id}>
+            <div className="block-wrapper">
+              <img src={item.img} alt="portfolio" className="screen" />
+              <div className="overlay-content d-flex align-items-end">
+                <Link
+                  to="portfolio-details-v2"
+                  className="d-flex justify-content-between align-items-center"
+                >
+                  <span>{item.title}</span>
+                  <img
+                    src={
+                      require("../../assets/images/icon/icon_28.svg").default
+                    }
+                    alt="icon"
+                  />
+                </Link>
               </div>
-              <blockquote>{review.descriptions}</blockquote>
-              <h6 className="name">
-                {review.name} <span>{review.country}</span>
-              </h6>
+              {/* <!-- /.overlay-content --> */}
             </div>
+            {/* <!-- /.block-wrapper --> */}
           </div>
         ))}
       </Slider>

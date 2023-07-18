@@ -1,6 +1,6 @@
 import React from "react";
 
-const FooterSubscribe = () => {
+const FooterSubscribe = ({ className = "" }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
@@ -8,8 +8,10 @@ const FooterSubscribe = () => {
   return (
     <div className="row align-items-center">
       <div className="col-md-6">
-        <div className="title-style-four white-vr sm-pb-20">
-          <h2 className="title">Updated by signup Newsletter</h2>
+        <div className={`title-style-three white-vr sm-pb-20 ${className}`}>
+          <h4 className="title">
+            Get update by <span>signup</span> Newsletter
+          </h4>
         </div>
       </div>
       {/* End .col */}
@@ -21,10 +23,7 @@ const FooterSubscribe = () => {
             <button className="ripple-btn">
               Join{" "}
               <img
-                src={
-                  require("../../../../../assets/images/icon/icon_20.svg")
-                    .default
-                }
+                src={require("../../assets/images/icon/icon_20.svg").default}
                 alt="icon"
                 className="ms-2 d-inline-block"
               />

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../../../assets/images/assets/ils_06.png";
-import SignupForm from "../../../../components/common/form/SignupForm";
-import Seo from "../../../../components/common/seo/Seo";
+import img1 from "../../assets/images/assets/ils_06.png";
+import SignupForm from "../common/form/SignupForm";
+import Seo from "../common/seo/Seo";
 
 const SignUp = () => {
   return (
@@ -40,7 +40,7 @@ const SignUp = () => {
               <Link to="/">
                 <img
                   src={
-                    require("../../../../assets/images/logo/vCamp_01.svg")
+                    require("../../assets/images/logo/vCamp_01.svg")
                       .default
                   }
                   alt=""

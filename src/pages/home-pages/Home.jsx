@@ -1,23 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import imgMedia from "../../assets/images/media/img_29.jpg";
 import Header from "../../components/business/Header";
-import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import FooterMenuListTwo from "../../components/common/footer/FooterMenuListTwo";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
-import Seo from "../../components/common/seo/Seo";
-import FeatureSection from "../../components/creative-agency/FeatureSection";
 import AccordionOne from "../../components/service-provider/AccordionOne";
-import Blog from "../../components/service-provider/Blog";
-import CaseSliderOne from "../../components/service-provider/CaseSliderOne";
-import Counter from "../../components/service-provider/Counter";
 import FancyBanner from "../../components/service-provider/FancyBanner";
-import FeedbackSlider from "../../components/service-provider/FeedbackSlider";
 import HeroSlider from "../../components/service-provider/HeroSlider";
-import TeamSlider from "../../components/service-provider/TeamSlider";
 import TextBlock from "../../components/service-provider/TextBlock";
-import TextBlockTitle from "../../components/service-provider/TextBlockTitle";
-import TextBlockTwo from "../../components/service-provider/TextBlockTwo";
+
 
 const Home = () => {
   return (

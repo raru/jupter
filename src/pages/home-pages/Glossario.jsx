@@ -16,14 +16,14 @@ import Blog from "../../components/business/Blog";
 import ContactMeta from "../../components/common/contact/ContactMeta";
 import FromStyleOne from "../../components/common/contact/FromStyleOne";
 import Address from "../../components/business/Address";
-import FooterSubscribe from "../../components/creative-agency/FooterSubscribe";
+import FooterSubscribe from "../../components/service-provider/FooterSubscribe";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import FooterMenuList from "../../components/common/footer/FooterMenuList";
 import Seo from "../../components/common/seo/Seo";
 import img2 from "../../assets/images/assets/quem_hero-img2@2x.png";
 import FancyBanner from "../../components/service-provider/FancyBanner";
 import FooterMenuListTwo from "../../components/common/footer/FooterMenuListTwo";
-import FeatureSection from "../../components/creative-agency/FeatureSection";
+import FeatureSection from "../../components/service-provider/FeatureSection";
 
 
 const Glossario = ({ className = "quem" }) => {
