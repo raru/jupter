@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/jupter/static/css/main.b5e6e4a6.css",
-    "main.js": "/jupter/static/js/main.17393454.js",
-    "static/media/aerial-top-down-view-of-water.mp4": "/jupter/static/media/aerial-top-down-view-of-water.6b9d07e59ededd2c12b0.mp4",
+    "main.css": "/jupter/static/css/main.f8c8000d.css",
+    "main.js": "/jupter/static/js/main.bf72a2d7.js",
+    "static/media/top-view-6s.mp4": "/jupter/static/media/top-view-6s.e29f188f687488af09f0.mp4",
+    "static/media/aerial-top-6s.mp4": "/jupter/static/media/aerial-top-6s.4385c7119cb963796d18.mp4",
+    "static/media/solar-energy-6s.mp4": "/jupter/static/media/solar-energy-6s.32d0e755dc031589503f.mp4",
     "static/media/fale@2x.jpg": "/jupter/static/media/fale@2x.9fef2de1d02f8aa7edcc.jpg",
     "static/media/video.mp4": "/jupter/static/media/video.c4b53f135d9f22f9943b.mp4",
     "static/media/quem_bkg@2x.jpg": "/jupter/static/media/quem_bkg@2x.0a1d9cb159d657248451.jpg",
@@ -10,6 +12,7 @@
     "static/media/analise@2x.png": "/jupter/static/media/analise@2x.f70871a1388f0041b62f.png",
     "static/media/hero_banner-01.jpg": "/jupter/static/media/hero_banner-01.20ec41d091761d0144a6.jpg",
     "static/media/quem_destaque@2x.png": "/jupter/static/media/quem_destaque@2x.d9979214e8a1bf946b94.png",
+    "static/media/quem_img@2x.png": "/jupter/static/media/quem_img@2x.d9979214e8a1bf946b94.png",
     "static/media/fa-solid-900.svg": "/jupter/static/media/fa-solid-900.13de59f1a36b6cb4bca0.svg",
     "static/media/quem_hero-img2@2x.png": "/jupter/static/media/quem_hero-img2@2x.3662d61167206f824625.png",
     "static/media/fa-brands-400.svg": "/jupter/static/media/fa-brands-400.216edb96b562c79adc09.svg",
@@ -164,15 +167,18 @@
     "static/media/nav_icon-off.svg": "/jupter/static/media/nav_icon-off.3945faa3ffb9417368551bf1b685de0f.svg",
     "static/media/nav_icon-on.svg": "/jupter/static/media/nav_icon-on.a51a6a22f97b396269f9fc29c969c1b1.svg",
     "static/media/produto-pill.svg": "/jupter/static/media/produto-pill.c60377de2f1439aac74d.svg",
+    "static/media/quem_bolinha-mask.svg": "/jupter/static/media/quem_bolinha-mask.78634b79041d13fa6979.svg",
     "static/media/icon_15.svg": "/jupter/static/media/icon_15.8e7d581175821ae553e5922c714a19d8.svg",
     "static/media/shape_46.svg": "/jupter/static/media/shape_46.d63c7a723414a6562255c392003b3941.svg",
     "static/media/shape_47.svg": "/jupter/static/media/shape_47.7f661aa4941fbf64a600a885a40c2efe.svg",
     "static/media/icon_38.svg": "/jupter/static/media/icon_38.5626ab8977ab657fe33715aecab1e15d.svg",
     "static/media/video_mask.svg": "/jupter/static/media/video_mask.299a45459d72ba13d7bc.svg",
     "static/media/arrow-right.svg": "/jupter/static/media/arrow-right.a10e647fb7cadd4118f952da09f83628.svg",
+    "static/media/quem_bolinha-dir.svg": "/jupter/static/media/quem_bolinha-dir.9e241cee142b1b9cd9fe10b085802999.svg",
     "static/media/shape_64.svg": "/jupter/static/media/shape_64.2b8cf1d8cc6f62d07744.svg",
     "static/media/shape_52.svg": "/jupter/static/media/shape_52.94489fe1247750b76774.svg",
     "static/media/icon_41.svg": "/jupter/static/media/icon_41.138fc9a7cede3466164194936a9775d6.svg",
+    "static/media/quem_bolinha-esq.svg": "/jupter/static/media/quem_bolinha-esq.c84c0b88d2690c1fbc3b2be7ccb01972.svg",
     "static/media/icon_36.svg": "/jupter/static/media/icon_36.53854599ea0ce55d612dd3f5a4464b74.svg",
     "static/media/icon_68.svg": "/jupter/static/media/icon_68.04d8fb2e08a97e4605c88b1116ec4906.svg",
     "static/media/icon_37.svg": "/jupter/static/media/icon_37.b05bfe25effea22b043feccffc83720e.svg",
@@ -195,7 +201,7 @@
     "static/media/icon_77.svg": "/jupter/static/media/icon_77.e206c8eee3a758dc615a.svg"
   },
   "entrypoints": [
-    "static/css/main.b5e6e4a6.css",
-    "static/js/main.17393454.js"
+    "static/css/main.f8c8000d.css",
+    "static/js/main.bf72a2d7.js"
   ]
 }
