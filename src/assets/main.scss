@@ -120,7 +120,7 @@ input:checked + .slider:before {
 
 
 .theme-menu-one .right-widget .login-btn span:hover {
-  background: var(--dark-color);
+  background: var(--verde-color);
   text-decoration:  none;
 }
 
@@ -186,7 +186,7 @@ font-family: 'Inter', sans-serif;
 }
 
 .theme-menu-one .right-widget .login-btn span {
-  font-family: "Faktum";
+  font-family: "Inter";
   font-size: 13px;
   /* font-weight: 300; */
   margin: 0 0 0 12px;
@@ -286,6 +286,10 @@ footer .logo small {
 .quem .video_holder {
   width: 415px; }
 
+
+.bg-darkgradient .video_holder {
+    width: 380px;  }
+
 .video_holder video {
   position: relative;
   top: 30px;
@@ -299,8 +303,6 @@ footer .logo small {
 }
 
 .logo_mask {
-  display: inline-block;
-
   -webkit-mask-image: url('../assets/images/assets/video_mask.svg');
   mask-image: url('../assets/images/assets/video_mask.svg');
   -webkit-mask-repeat: no-repeat;
@@ -309,7 +311,7 @@ footer .logo small {
   mask-position: center;
   -webkit-mask-size: 100%;
   mask-size: 100%;
-
+  display: inline-block;
   margin-top: -100px;
 }
 
@@ -319,11 +321,17 @@ footer .logo small {
   mask-image: url('../assets/images/assets/quem_bolinha-mask.svg');
 }
 
+.bg-darkgradient .logo_mask {
+  display: inline-block;
+  -webkit-mask-image: url('../assets/images/assets/video_mask.svg');
+  mask-image: url('../assets/images/assets/video_mask.svg');  
+}
+
 .video_bolinhas {
   position: absolute;
-  margin-top: -320px;
-  width: 362px;
-  margin-left: 10px;
+  margin-top: -319px;
+  width: 367px;
+  margin-left: 7px;
 }
 
 
