@@ -4,13 +4,6 @@
 	http://jedwatson.github.io/classnames
 */
 
-/*!
-  * PhotoSwipe 5.3.8 - https://photoswipe.com
-  * (c) 2023 Dmytro Semenov
-  */
-
-/*! For license information please see ScrollspyNav.js.LICENSE.txt */
-
 /**
  * @license React
  * react-dom.production.min.js
