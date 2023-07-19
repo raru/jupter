@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { Link } from "react-router-dom";
-import heroAvatar from "../../assets/images/media/img_01.jpg";
+// import heroAvatar from "../../assets/images/media/img_01.jpg";
 
 const TextBlockOne = () => {
   const [isOpen, setOpen] = useState(false);
@@ -51,7 +51,7 @@ const TextBlockOne = () => {
 
         <div className="col-xxl-6 col-lg-6" data-aos="fade-up">
           <div className="img-container position-relative">
-            <img src={heroAvatar} alt="hero avatar" className="ceo-avatar" />
+            {/* <img src={heroAvatar} alt="hero avatar" className="ceo-avatar" /> */}
             <div className="quote-wrapper">
               <img
                 src={require("../../assets/images/icon/icon_10.svg").default}

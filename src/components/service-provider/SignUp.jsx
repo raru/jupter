@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/assets/ils_06.png";
+// import img1 from "../../assets/images/assets/ils_06.png";
 import SignupForm from "../common/form/SignupForm";
 import Seo from "../common/seo/Seo";
 
@@ -25,11 +25,11 @@ const SignUp = () => {
             </div>
           </div>
           <div className="illustration-holder">
-            <img
+            {/* <img
               src={img1}
               alt="illustration"
               className="illustration ms-auto"
-            />
+            /> */}
           </div>
         </div>
         {/* <!-- /.illustration-wrapper --> */}
@@ -38,14 +38,7 @@ const SignUp = () => {
           <div className="d-flex justify-content-between align-items-center">
             <div className="logo">
               <Link to="/">
-                <img
-                  src={
-                    require("../../assets/images/logo/vCamp_01.svg")
-                      .default
-                  }
-                  alt=""
-                  width="127"
-                />
+
               </Link>
             </div>
             <Link to="/" className="go-back-button">
@@ -64,7 +57,6 @@ const SignUp = () => {
 
             <SignupForm />
             <p className="text-center copyright-text">
-              Copyright @2022 vcamp inc.
             </p>
             {/* End form */}
           </div>

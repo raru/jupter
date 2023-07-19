@@ -1,14 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CustomLink from "./CustomLink";
 import logo from "../../../../assets/images/logo/jupter_logotipo.svg";
-import homeDropdownData from "./dropdown-data/homeMegaMenuData";
-import elementsMegaMenuData from "./dropdown-data/elementsMegaMenuData";
-import portfolioMegaMenuData from "./dropdown-data/portfolioMegaMenuData";
-import pagesMegaMenuData from "./dropdown-data/pagesMegaMenuData";
-import shopDropdownData from "./dropdown-data/shopDropdownData";
-import blogDropdownData from "./dropdown-data/blogDropdownData";
-
 
 const MegaMenuOne = () => {
   return (

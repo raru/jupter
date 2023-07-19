@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo/vCamp_09.svg";
+// import logo from "../../assets/images/logo/vCamp_09.svg";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -24,7 +24,7 @@ const Header = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo">
             <Link to="/">
-              <img src={logo} alt="brand" width="37" />
+              {/* <img src={logo} alt="brand" width="37" /> */}
             </Link>
           </div>
           {/* End .logo */}

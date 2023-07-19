@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../../assets/images/media/img_22.jpg";
 
 const TextBlock = () => {
   return (

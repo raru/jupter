@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SubscribeForm from "../common/form/SubscribeForm";
-import Partners from "./Partners";
-import img1 from "../../assets/images/assets/quem_hero-img1@2x.png";
 import video from '../../assets/images/media/video.mp4'
 
 const Hero = () => {

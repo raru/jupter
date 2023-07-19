@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import ModalVideo from "react-modal-video";
 import Slider from "react-slick";
 import img1 from "../../assets/images/assets/hero_banner-01.jpg";
-import img2 from "../../assets/images/media/img_20.jpg";
-import img3 from "../../assets/images/media/img_21.jpg";
 // import video1 from "../../assets/images/media/aerial-top-down-view-of-water.mp4";
 import video1 from "../../assets/images/media/aerial-top-6s.mp4";
 
