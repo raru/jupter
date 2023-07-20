@@ -14,7 +14,7 @@ import FeedbackSliderTwo from "../../components/business/FeedbackSliderTwo";
 const Produto = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Produto" />
+      <Seo title="Nossas Soluções" />
       {/* End Seo Related data */}
 
       {/* <!-- 
