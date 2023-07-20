@@ -34,7 +34,6 @@ const FancyBanner = () => {
     </div>
   </div>
 </div>
-
 <img
                 src={require("../../assets/images/assets/video_bolinha.svg").default}
                 alt="bolinha"

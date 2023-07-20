@@ -5,9 +5,11 @@ import Footer from "../../components/common/footer/Footer";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
 import FancyBanner from "../../components/service-provider/FancyBanner";
-import TextBlockProduto from "../../components/service-provider/TextBlockProduto";
+// import TextBlockProduto from "../../components/service-provider/TextBlockProduto";
 import HeroProduto from "../../components/business/HeroProduto";
 import MenuSolucoes from "../../components/common/header/mega-menu/MenuSolucoes";
+import FeedbackSliderTwo from "../../components/business/FeedbackSliderTwo";
+
 
 const Produto = () => {
   return (
@@ -44,24 +46,29 @@ const Produto = () => {
 
 
 
-      {/* <!-- 
-			=============================================
-				Vcamp Text Block Three
-			============================================== 
+      {/* <!--
+			=====================================================
+				Feedback Slider Two
+			=====================================================
 			--> */}
-      <div className="text-block-three produto">
-        <div className="container">
+      <div className="feedback-section-two text-block-three produto">
+          <div className="container">
+
           <MenuSolucoes />
 
-          <TextBlockProduto />
-        </div>
-        <img
-          src={require("../../assets/images/shape/shape_22.svg").default}
-          alt=""
-          className="shapes shape-one"
-        />
+          {/* <div className="feedback_slider_two slick-rounded-arrow arrow-top-right">
+            <FeedbackSliderTwo />       
+          </div> */}
+          {/* <!-- /.feedback_slider_two --> */}
+
+          </div>
+          {/* <!-- /.container --> */}
+
+ 
       </div>
-      {/* <!-- /.vcamp-text-block-three --> */}
+      {/* <!-- /.feedback-section-two --> */}
+
+
 
 
 

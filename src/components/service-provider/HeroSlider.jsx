@@ -4,7 +4,7 @@ import ModalVideo from "react-modal-video";
 import Slider from "react-slick";
 import img1 from "../../assets/images/assets/hero_banner-01.jpg";
 // import video1 from "../../assets/images/media/aerial-top-down-view-of-water.mp4";
-import video1 from "../../assets/images/media/aerial-top-6s.mp4";
+import video1 from "../../assets/images/media/aerial-top-down-view-of-water.mp4";
 
 const HeroSlider = () => {
   const [isOpen, setOpen] = useState(false);
@@ -57,8 +57,8 @@ const HeroSlider = () => {
       />
     </video>
     
-              <div className="slider-inner">
-                <div className="row  align-items-center  hero-content">
+              <div className="row  align-items-center  slider-inner">
+                <div className="row  hero-content">
 
 
       <div className="col-md-6">

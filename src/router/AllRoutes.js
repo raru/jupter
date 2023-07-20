@@ -10,12 +10,11 @@ import Carreira from "../pages/home-pages/Carreira";
 import FaleConosco from "../pages/home-pages/FaleConosco";
 import Glossario from "../pages/home-pages/Glossario";
 import Home from "../pages/home-pages/Home";
-import Produto from "../pages/home-pages/Produto";
+import Solucoes from "../pages/home-pages/Solucoes";
 import NotFound from "../pages/NotFound";
 import ComingSoon from "../pages/ComingSoon";
 import SignIn from "../components/service-provider/SignIn";
 import SignUp from "../components/service-provider/SignUp";
-
 
 
 const AllRoutes = () => {
@@ -30,13 +29,15 @@ const AllRoutes = () => {
         <Route path="/analise" element={<Analise />} />
         <Route path="/carreira" element={<Carreira />} />
         <Route path="/fale-conosco" element={<FaleConosco />} />
-        <Route path="/produto" element={<Produto />} />
+        <Route path="/solucoes" element={<Solucoes />} />
+
         <Route path="/glossario" element={<Glossario />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
 
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
 
+        <Route path="/404" element={<NotFound />} />
 
         {/* <Route path="*" element={<NotFound />} /> */}
         <Route path="*" element={<Home />} />

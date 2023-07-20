@@ -187,7 +187,7 @@ font-family: 'Inter', sans-serif;
 
 .theme-menu-one .right-widget .login-btn span {
   font-family: "Inter";
-  font-size: 13px;
+  font-size: 12px;
   /* font-weight: 300; */
   margin: 0 0 0 12px;
   padding: 5px 15px;
@@ -512,7 +512,7 @@ footer .logo small {
 }
 
 
-.hero_slider_two .slider-inner {  width: 100%;  right: 0;  padding: 105px 85px 20px 85px; top: 0; }
+.hero_slider_two .slider-inner {  width: 100%;  right: 0;  padding: 0 85px 20px 85px; top: 0; }
 .hero_slider_two .slider-inner:before {  background-color: rgba(0,0,0,.1); }
 .hero-content, .hero-content .title-style-five.white-vr .title, .hero-content p { color: #fff; line-height: 1.1em; padding-right: 40px;}
 .hero-content p  {  width: 80%;  font-weight: 100;  line-height: 1.4em; }
@@ -614,9 +614,11 @@ footer .logo small {
 .card-style-three {  padding-right: 50px; }
 .card-style-three ul li { cursor: pointer; border-bottom:1px solid #D1D1D1; padding-bottom: 10px; }
 
-
 .text-block-three.produto .menu-column {
   padding: 5% 10%;
+}
+.text-block-three.produto .item .menu-column {
+  padding: 0% 10%;
 }
 .text-block-three.produto .menu-column:hover {
   background-color: transparent;
@@ -655,8 +657,8 @@ footer .logo small {
   ) 1 100%;
 }
 
+.text-block-three .menu-column { font-size: 16px;}
 .text-block-three .menu-column:hover .produto-pill { color: var(--dark-color); }
-
 .produto-pill::before {
   position: absolute;
   content: "";
@@ -703,12 +705,16 @@ footer .logo small {
 .menusolucoes .w20 .menu-column:hover {  background-color: var(--verde-color); }
 
 .menusolucoes .menu-column .mega-dropdown-list li {
-  margin-bottom: 50px;
+  margin-bottom: 15vh;
   font-weight: 400;
   font-size: 95%;
   line-height: 1.2em;
 }
 
+.menusolucoes-produto_topico {
+  font-family: 'Faktum';
+  font-size: 22px;
+}
 
 .user-data-page .form-wrapper .header-info a {  color: var(--verde-color);  }
 .user-data-page .form-wrapper h2 span:before {  background: var(--verde-color); }

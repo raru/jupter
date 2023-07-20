@@ -33,7 +33,7 @@ const TextBlock = () => {
                 <div className="col-6 col-lg-4 box-solucao" data-aos="fade">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li><a href="#" className="mb-40">Consultoria Energética</a></li>       
+                      <li><a href="/solucoes" className="mb-40">Consultoria Energética</a></li>       
                       <br/><br/><br/>           
                         <img
                         src={require("../../assets/images/icon/nav_icon-on.svg").default}
@@ -54,7 +54,7 @@ const TextBlock = () => {
                 <div className="col-6 col-lg-4 box-solucao" data-aos="fade">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li><a href="#" className="mb-40">Soluções de gestão no mercado livre</a></li>       
+                      <li><a href="/solucoes" className="mb-40">Soluções de gestão no mercado livre</a></li>       
                       <br/>    <br/>       
                         <img
                         src={require("../../assets/images/icon/nav_icon-on.svg").default}
@@ -77,7 +77,7 @@ const TextBlock = () => {
                 <div className="col-6 col-lg-4 box-solucao" data-aos="fade">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li><a href="#" className="mb-40">Soluções de gestão no mercado cativo</a></li>       
+                      <li><a href="/solucoes" className="mb-40">Soluções de gestão no mercado cativo</a></li>       
                       <br/>    <br/>       
                         <img
                         src={require("../../assets/images/icon/nav_icon-on.svg").default}
@@ -98,7 +98,7 @@ const TextBlock = () => {
                 <div className="col-6 col-lg-4 box-solucao" data-aos="fade">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li><a href="#" className="mb-40">Projetos de eficiência energética</a></li>       
+                      <li><a href="/solucoes" className="mb-40">Projetos de eficiência energética</a></li>       
                       <br/>     <br/>      
                         <img
                         src={require("../../assets/images/icon/nav_icon-on.svg").default}
@@ -121,7 +121,7 @@ const TextBlock = () => {
                 <div className="col-6 col-lg-4 box-solucao" data-aos="fade">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li><a href="#" className="mb-20">Projetos de geração de energia</a></li>       
+                      <li><a href="/solucoes" className="mb-20">Projetos de geração de energia</a></li>       
                       <br/>       <br/>    
                         <img
                         src={require("../../assets/images/icon/nav_icon-on.svg").default}
