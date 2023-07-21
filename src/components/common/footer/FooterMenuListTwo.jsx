@@ -36,7 +36,7 @@ const FooterMenuListTwo = ({ className = "" }) => {
         </div>
       ))}
 
-      <div className="col-lg-2 col-md-3">
+      <div className="col-lg-2 xs-mt-30 xs-mb-30 sm-mt-0 sm-mb-0 col-md-3">
             <Link to="/" className="btn-roxo">
               <span>Área do Cliente</span>
             </Link>
