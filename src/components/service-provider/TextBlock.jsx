@@ -7,7 +7,7 @@ const TextBlock = () => {
         <div className="text-wrapper">
 
         <div className="title-style-five white-vr">
-          <span className="btn-branco btn-migalha">NOSSAS SOLUÇÕES</span>
+          <span className="btn-branco btn-migalha btn-migalha-roxo">NOSSAS SOLUÇÕES</span>
           <h2 className="title mt-20 pr30">
           Da redução do preço da energia à redução do consumo de energia.
           </h2>

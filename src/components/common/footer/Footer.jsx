@@ -19,7 +19,7 @@ const Footer = () => {
                   />
                 </Link>
                 <br/>
-                <small className="mt-10">R. Desembargador Eliseu Guilherme, 53/69 - Cj. 62 <br/>CEP 04004-030 – Paraíso – São Paulo – SP</small>
+                <small className="xs-mb-30 mt-10">R. Desembargador Eliseu Guilherme, 53/69 - Cj. 62 <br/>CEP 04004-030 – Paraíso – São Paulo – SP</small>
               </div>
             </div>
             <FooterMenuListTwo />

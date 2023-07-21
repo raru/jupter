@@ -60,19 +60,22 @@ const HeroSlider = () => {
               <div className="row  align-items-center  slider-inner">
                 <div className="row  hero-content">
 
+               
 
-      <div className="col-md-6">
+
+
+      <div className=" col-12 col-md-6">
         <div className="title-style-five white-vr">
           <h1 className="title mt-20">
           {item.title}
           </h1>
-          <p className="mt-30">{item.descriptions}</p>
+          <p className="xs-mt-0 md-mt-30">{item.descriptions}</p>
           <Link to="/sign-in" className="btn-branco btn-branco_transparente">
               <span className="m-0">Fale com a gente</span>
             </Link>
         </div>
       </div>
-      <div className="col offset-md-1">
+      <div className="col-4 d-none d-sm-block offset-md-1">
       <img
                 src={require("../../assets/images/assets/hero_img.svg").default}
                 alt="hero"
