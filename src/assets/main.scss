@@ -518,6 +518,7 @@ footer .logo small {
 .hero-content, .hero-content .title-style-five.white-vr .title, .hero-content p { color: #fff; line-height: 1.1em; padding-right: 40px;}
 .hero-content p  {  width: 80%;  font-weight: 100;  line-height: 1.4em; }
 .hero_slider_two .hero-img {  min-height: 535px;  height: calc(100vh - 110px);}
+
 @media (min-width: 1200px) and (max-width: 1399px) {
   .hero_slider_two .hero-img {
       min-height: 535px;
@@ -525,8 +526,13 @@ footer .logo small {
   }
 
 
-.text-block-three {  padding: 200px 0 100px; }
-.text-block-three {  padding: 200px 0 100px; }
+  .text-block-three {
+    padding: 200px 0 100px;
+    margin-top: 80px;
+    background: #fff;
+    z-index: 9;
+    position: relative;
+}
 
 
 .scroll-top {  background: var(--verde-color); }
@@ -812,7 +818,13 @@ header .inner-content {
     margin: 100px 0 -100px;
 }
 
+.hero-banner-four video {
+  opacity: 0.5;
+  max-width: 150%;
+}
+
 .hero_slider_two .slider-inner {
+  width: 110%;
     padding: 0 25px 20px;
 }
 
@@ -832,6 +844,10 @@ header .inner-content {
     padding: 8px 25px;
 }
 
+.btn-migalha {
+  font-size: 7px;
+  padding: 4px 17px;
+}
 
 .text-block-three {
     padding: 100px 0 100px;
@@ -869,23 +885,24 @@ margin-left: -40px;
   
 
   .bg-darkroxo {
-    padding: 20px 15px 20px;
+    padding: 20px 15px 145px;
 }
   .title-style-five h1.title, .title-style-one h1.title {
       font-size: 28px;
       }
   
   
-  .text-block-three, .text-block-three {
-      padding: 150px 0 50px;
-  }
+      .text-block-three, .text-block-three {
+        padding: 80px 0 50px;
+        margin-top: 90px;
+    }
   
   .title-style-five .title, .title-style-one .title {
       font-size: 22px;
   }
   
   .logo_mask {
-      margin-top: 50px;
+      margin-top: 25px;
       }
   
   .video_holder {
@@ -896,12 +913,122 @@ margin-left: -40px;
   .video_bolinhas {
       margin-left: 10px;
       margin-top: -267px;
-      width: 325px;
+      width: 330px;
   }
+
+  .video_holder video {
+    top: 5px;
+}
   
   .pl-15 { padding-right: 0; padding-left: 0;}
-  
-  
 
-  
+
+  // quemsomos
+  .hero-banner-one {
+    padding: 45px 25px 40px; }
+
+  .quem .logo_mask {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.quem .video_holder {
+  width: 300px; height: 250px;
+}
+
+.quem .video_bolinhas.video_bolinhas-verde {
+  margin-top: -194px;
+  width: 125px;
+  margin-left: 7px !important;
+}
+
+.quem .video_bolinhas.video_bolinhas-branca {
+  margin-top: -219px;
+  width: 175px;
+  margin-left: 142px !important;
+}
+
+.quem .partner-slider-one {
+  margin-left: 20px;
+}
+
+.card-style-two {
+  padding-bottom: 145px;
+}
+
+.counter-block-one {  position: relative; }
+  .counter-block-one.counter1 {  margin-top: -800px; }
+  .counter-block-one.counter2 {  margin-top: -460px; }
+  .counter-block-one.counter3 {  margin-top: -125px;}
+
+  .fancy-banner-ten {
+    margin-inline: 2%; }  
+
+    .h3, h3 {
+      font-size: 19px;
   }
+
+  .fancy-banner-one {
+    padding-top: 40px;
+}
+
+.quem   .fancy-banner-one .video_holder {
+  width: 300px;
+  height: 340px;
+}
+.quem   .fancy-banner-one 
+.video_holder video {
+  top: 20px;
+}
+
+.quem   .fancy-banner-one img.video_bolinhas {
+  margin-top: -249px;
+  width: 288px;
+    margin-left: 6px !important;
+}
+
+
+
+// analise
+.pt-300 {
+  padding-top: 200px;
+}
+
+// carreira
+.title-style-five { margin-top: 25px;}
+
+
+  // fale
+  .title-style-one   { margin-top: 50px;} 
+  .form-style-one {
+    margin-right: 15px;
+  }
+
+
+  // solucoes
+  .pt-100 {
+    padding-top: 50px;
+}
+
+.feedback-section-two.produto {
+  padding: 0 0 30px;
+  margin-top: 0;
+}
+
+.row.menusolucoes { display: none;}
+.produto-pill::before {  left: 10px; }
+
+.slick-dots { display: block; }
+
+//menu mobile
+
+.navbar .dropdown-menu .mega-dropdown-list li {
+  margin-bottom: 10px;  font-size: 100%;}
+
+//fancy banner
+.bg-darkgradient .video_holder {
+  width: 343px;
+}  
+
+  }
+

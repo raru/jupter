@@ -84,7 +84,7 @@ className="video_bolinhas  video_bolinhas-branca"
 				Vcamp Text Block One
 			============================================== 
 			--> */}
-      <div className="vcamp-text-block-one mt-60 lg-mt-30 position-static">
+      <div className="vcamp-text-block-one mt-60 lg-mt-30 position-static d-none d-sm-block">
         <div className="container">
           <TextBlockVideo />
         </div>
@@ -96,7 +96,7 @@ className="video_bolinhas  video_bolinhas-branca"
 				Vcamp Feature Section Two
 			============================================== 
 			--> */}
-      <div className="bg-darkroxo mt-130 md-mt-110">
+      <div className="bg-darkroxo xs-mt-30 md-mt-110">
         <div className="container">
           <div className="row gx-5">
             <div className="col-xxl-11 m-auto">

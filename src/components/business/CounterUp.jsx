@@ -36,11 +36,11 @@ const CounterUp = () => {
       {counterUpContent.map((val, i) => (
         <div
         className="col-lg-4 col-sm-6"
-        data-aos="fade-up"
+        // data-aos="fade-up"
           data-aos-delay={val.animationDelay}
           key={val.id}
         >
-          <div className="counter-block-one mb-45">
+          <div className={`counter-block-one mb-45 counter${val.id}`}>
             <div className="main-count roxo">
               <span className="counter">
                 <CountUp

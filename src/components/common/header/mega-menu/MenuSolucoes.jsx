@@ -26,7 +26,7 @@ const MenuSolucoes = (props) => {
           breakpoint: 767,
           settings: {
             slidesToShow: 1,
-            dots: false,
+            dots: true,
             arrows: false,
           },
         },
@@ -182,18 +182,7 @@ const MenuSolucoes = (props) => {
   {feebackSliderContent.map((item) => (
     <div className="item" key={item.id}>
 
-      {/* <div className="testimonial-block-one">
-        <div className="icon d-flex align-items-center justify-content-center">
-          <img
-            src={require("../../assets/images/icon/icon_15.svg").default}
-            alt="icon"
-          />
-        </div>
-        <blockquote>{item.descriptions}</blockquote>
-        <div className="name">
-          <span></span>
-        </div>
-      </div> */}
+
 
 <div id="nossas-solucoes" className="row align-items-start pt-30">
 <div className="col-md-4 ms-auto px-5" data-aos="fade-left">

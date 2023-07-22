@@ -73,7 +73,7 @@ const Analise = ({ className = "quem" }) => {
 
 
             <div className="row align-items-center">
-              <div className="col-xl-6 col-lg-6 offset-3 mt-80 upload-box"
+              <div className="col-xl-6 col-lg-6 md-offset-3 mt-80 upload-box"
                 data-aos="fade-right">
                   <center>
                   <img

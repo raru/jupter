@@ -5,7 +5,7 @@ import video from '../../assets/images/media/video.mp4'
 const FancyBanner = () => {
   return (
     <>
-      <div className="col-md-5">
+      <div className="col-md-5 mb-30">
         <div className="title-style-five white-vr">
           <span className="btn-branco btn-migalha">análise de viabilidade</span>
           <h2 className="title mt-20">
