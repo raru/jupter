@@ -1,6 +1,6 @@
 import React from "react";
-import Social from "../components/coming-soon/Social";
-import SubscribeForm from "../components/coming-soon/SubscribeForm";
+import Social from "../components/service-provider/Social";
+import SubscribeForm from "../components/service-provider/SubscribeForm";
 
 // import shape image
 import shape1 from "../assets/images/shape/shape_46.svg";

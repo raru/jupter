@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../../components/business/Header";
+import Header from "../../components/service-provider/Header";
 import Footer from "../../components/common/footer/Footer";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
 import FancyBanner from "../../components/service-provider/FancyBanner";
-// import TextBlockProduto from "../../components/service-provider/TextBlockProduto";
-import HeroProduto from "../../components/business/HeroProduto";
+import HeroProduto from "../../components/service-provider/HeroProduto";
 import MenuSolucoes from "../../components/common/header/mega-menu/MenuSolucoes";
-import FeedbackSliderTwo from "../../components/business/FeedbackSliderTwo";
 
 
 const Produto = () => {

@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CounterUp from "../../components/business/CounterUp";
-import Header from "../../components/business/Header";
+import CounterUp from "../../components/service-provider/CounterUp";
+import Header from "../../components/service-provider/Header";
 import Footer from "../../components/common/footer/Footer";
-import Hero from "../../components/business/Hero";
+import Hero from "../../components/service-provider/Hero";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
-import TextBlockVideo from "../../components/business/TextBlockVideo";
-import FeatureSectionTwo from "../../components/business/FeatureSectionTwo";
+import TextBlockVideo from "../../components/service-provider/TextBlockVideo";
+import FeatureSectionTwo from "../../components/service-provider/FeatureSectionTwo";
 import Seo from "../../components/common/seo/Seo";
 import img2 from "../../assets/images/assets/quem_hero-img2@2x.png";
 import FancyBanner from "../../components/service-provider/FancyBanner";

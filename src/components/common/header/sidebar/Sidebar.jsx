@@ -1,6 +1,6 @@
 import React from "react";
 import SidebarHeader from "./SidebarHeader";
-import SidebarMenu from "./SidebarMenu";
+// import SidebarMenu from "./SidebarMenu";
 import SidebarFooter from "./SidebarFooter";
 
 const Sidebar = ({ className = "" }) => {
@@ -15,7 +15,7 @@ const Sidebar = ({ className = "" }) => {
       {/* End sidebarheader */}
 
       <div className="sidebar-nav-item">
-        <SidebarMenu />
+        {/* <SidebarMenu /> */}
       </div>
       {/* End .sidebar-nav-item */}
 

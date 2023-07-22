@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../../components/business/Header";
+import Header from "../../components/service-provider/Header";
 import Footer from "../../components/common/footer/Footer";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
@@ -33,7 +33,7 @@ const Carreira = ({ className = "carreira" }) => {
 			Contact Section One
 			=====================================================
 			--> */}
-      <div className="box-layout mb-80 sm-mb-40 bg-darkgradient pt-200">
+      <div className="box-layout mb-80 sm-mb-40 bg-darkgradient pt-300">
           <div className="container">
             <div className="row align-items-center">
               <div
