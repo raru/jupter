@@ -1,3 +1,12 @@
+<!-- TODO -->
+# link direto para solucao/slide (initialSlide) 
+# scroll conteúdo Solucao
+# função botão upload Analise
+# função botão upload Carreira
+# função form Contato
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import logo from "../../../../assets/images/logo/jupter_logotipo.svg";
 
+// const myData = {  initialSlide: 1 }
+
 const MegaMenuOne = () => {
+
+  const navigate = useNavigate();
+
   return (
     <ul className="navbar-nav">
       <li className="d-block d-lg-none">
@@ -15,6 +22,7 @@ const MegaMenuOne = () => {
       {/* End Brnad */}
 
 
+      {/* <Link to="/solucoes" state={myData}>Link Text</Link> */}
 
       <li className="nav-item">
         <button
@@ -28,14 +36,19 @@ const MegaMenuOne = () => {
       {/* End elements dropdown */}            
 
       <li className="nav-item dropdown mega-dropdown">
+      {/* <Link to="/solucoes" state={0}> */}
         <button
           className="nav-link dropdown-toggle"
           data-bs-toggle="dropdown"
           data-bs-auto-close="outside"
           aria-expanded="false"
+
+          onClick={() => navigate('/solucoes')}
         >
           Soluções
         </button>
+          {/* </Link> */}
+
         <ul className="dropdown-menu align-items-center">
           <li>
             <div className="row">
@@ -43,7 +56,9 @@ const MegaMenuOne = () => {
                 <div className="w20 p-0" data-aos="fade-right">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li>          <Link to="/solucoes#nossas-solucoes"  state={{ initialSlide: 4 }}  >Consultoria Energética</Link></li>       
+                      <li>        
+                      <Link to="/solucoes" state={1}>
+                        Consultoria Energética</Link></li>       
                       <span className="d-none d-md-block"><br/><br/><br/>           </span>
                         <img
                         src={require("../../../../assets/images/icon/nav_icon-off.svg").default}
@@ -64,7 +79,9 @@ const MegaMenuOne = () => {
                 <div className="w20 p-0" data-aos="fade-right">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li>          <Link to="/solucoes#nossas-solucoes">Soluções de gestão no mercado livre</Link></li>       
+                      <li>          
+                      <Link to="/solucoes" state={2}>
+                        Soluções de gestão no mercado livre</Link></li>       
                       <span className="d-none d-md-block"><br/>    <br/>       </span>
                         <img
                         src={require("../../../../assets/images/icon/nav_icon-off.svg").default}
@@ -85,7 +102,9 @@ const MegaMenuOne = () => {
                 <div className="w20 p-0" data-aos="fade-right">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li>          <Link to="/solucoes#nossas-solucoes">Soluções de gestão no mercado cativo</Link></li>       
+                      <li>          
+                      <Link to="/solucoes" state={3}>
+                        Soluções de gestão no mercado cativo</Link></li>       
                       <span className="d-none d-md-block"><br/>    <br/>       </span>
                         <img
                         src={require("../../../../assets/images/icon/nav_icon-off.svg").default}
@@ -106,7 +125,9 @@ const MegaMenuOne = () => {
                 <div className="w20 p-0" data-aos="fade-right">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li>          <Link to="/solucoes#nossas-solucoes">Projetos de eficiência energética</Link></li>       
+                      <li>          
+                      <Link to="/solucoes" state={4}>
+                        Projetos de eficiência energética</Link></li>       
                       <span className="d-none d-md-block"><br/>     <br/>      </span>
                         <img
                         src={require("../../../../assets/images/icon/nav_icon-off.svg").default}
@@ -127,7 +148,11 @@ const MegaMenuOne = () => {
                 <div className="w20 p-0" data-aos="fade-right">
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
-                      <li>          <Link to="/solucoes#nossas-solucoes">Projetos de geração de energia</Link></li>       
+                      <li>          
+                        
+                      <Link to="/solucoes" state={5}>
+                        Projetos de geração de energia</Link></li>       
+
                       <span className="d-none d-md-block"><br/>       <br/>    </span>
                         <img
                         src={require("../../../../assets/images/icon/nav_icon-off.svg").default}

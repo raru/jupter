@@ -1,13 +1,31 @@
 import React, { useState, useRef } from "react";
+import { useLocation } from "react-router-dom";
+
 import Slider from "react-slick";
+
+function refreshPage() { window. location. reload(false); }
 
 
 const MenuSolucoes = (props) => {
-    //   slider settings
+
+
+// const location = useLocation();
+// const myData = location.state;
+// console.log(myData);
+
+
+const initialslide = useLocation();
+const myData = initialslide.state;
+console.log(myData);
+const { initialSlide = '0' } = initialslide.state || {}
+  // console.log(initialslide)
+
+  //   slider settings
     const settings = {
       dots: true,
       arrows: false,
-      initialSlide: 0,
+      // myData,
+      initialSlide: myData,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -34,6 +52,7 @@ const MenuSolucoes = (props) => {
       ...props
     };
   
+
     const feebackSliderContent = [
       {
         id: 0,
@@ -113,7 +132,7 @@ const MenuSolucoes = (props) => {
       {
         id: 5,
         nome: "Projetos de geração de energia",
-        chamada: "Projetos de eficiência energética",
+        chamada: "Projetos de geração de energia",
         produto_topic_1: "",
         produto_topic_1_hide: "hide",    
         descriptions: `Rede de profissionais dedicada para realização de estudos de viabilidade.`,
@@ -136,7 +155,7 @@ const MenuSolucoes = (props) => {
 {/* slice para começar a partir do id:1 */}
 {feebackSliderContent.slice(1).map((item, id) => (
 
-                <div key={item + id} className="w20 p-0" data-aos="fade-right" onClick={e => sliderRef.slickGoTo(item.id)} >
+                <div key={item + id} className="w20 p-0" data-aos="fade-right" onClick={e => sliderRef.slickGoTo(item.id)}  >
                   <div className="menu-column">
                     <ul className="style-none mega-dropdown-list">
                       <li>

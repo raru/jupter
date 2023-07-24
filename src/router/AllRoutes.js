@@ -42,6 +42,7 @@ const AllRoutes = () => {
         {/* <Route path="*" element={<NotFound />} /> */}
         <Route path="*" element={<Home />} />
 
+
       </Routes>
     </>
   );
