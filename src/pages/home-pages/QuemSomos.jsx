@@ -8,7 +8,7 @@ import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import TextBlockVideo from "../../components/service-provider/TextBlockVideo";
 import FeatureSectionTwo from "../../components/service-provider/FeatureSectionTwo";
 import Seo from "../../components/common/seo/Seo";
-import img2 from "../../assets/images/assets/quem_hero-img2@2x.png";
+// import img2 from "../../assets/images/assets/quem_hero-img2@2x.png";
 import FancyBanner from "../../components/service-provider/FancyBanner";
 import quem_video2 from '../../assets/images/media/top-view-6s.mp4'
 

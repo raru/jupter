@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/assets/quem_hero-img1@2x.png";
+// import img1 from "../../assets/images/assets/quem_hero-img1@2x.png";
 import video from '../../assets/images/media/solar-energy-6s.mp4'
 
 

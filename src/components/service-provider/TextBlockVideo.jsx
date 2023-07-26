@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
-import { Link } from "react-router-dom";
+// import ModalVideo from "react-modal-video";
+// import { Link } from "react-router-dom";
 import quem_img from '../../assets/images/assets/quem_img@2x.png'
 
 const TextBlockVideo = () => {

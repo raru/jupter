@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Header from "../../components/service-provider/Header";
 import Footer from "../../components/common/footer/Footer";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
-import AccordionOne from "../../components/service-provider/AccordionOne";
+// import AccordionOne from "../../components/service-provider/AccordionOne";
 import FancyBanner from "../../components/service-provider/FancyBanner";
 import HeroSlider from "../../components/service-provider/HeroSlider";
 import TextBlock from "../../components/service-provider/TextBlock";
