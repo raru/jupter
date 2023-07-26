@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jupter/static/css/main.bb157b84.css",
-    "main.js": "/jupter/static/js/main.b9d92769.js",
+    "main.css": "/jupter/static/css/main.98a1a492.css",
+    "main.js": "/jupter/static/js/main.0015b8f9.js",
     "static/media/aerial-top-down-view-of-water.mp4": "/jupter/static/media/aerial-top-down-view-of-water.6b9d07e59ededd2c12b0.mp4",
     "static/media/top-view-6s.mp4": "/jupter/static/media/top-view-6s.e29f188f687488af09f0.mp4",
     "static/media/aerial-top-6s.mp4": "/jupter/static/media/aerial-top-6s.4385c7119cb963796d18.mp4",
@@ -15,9 +15,7 @@
     "static/media/quem_destaque@2x.png": "/jupter/static/media/quem_destaque@2x.d9979214e8a1bf946b94.png",
     "static/media/quem_img@2x.png": "/jupter/static/media/quem_img@2x.d9979214e8a1bf946b94.png",
     "static/media/fa-solid-900.svg": "/jupter/static/media/fa-solid-900.13de59f1a36b6cb4bca0.svg",
-    "static/media/quem_hero-img2@2x.png": "/jupter/static/media/quem_hero-img2@2x.3662d61167206f824625.png",
     "static/media/fa-brands-400.svg": "/jupter/static/media/fa-brands-400.216edb96b562c79adc09.svg",
-    "static/media/quem_hero-img1@2x.png": "/jupter/static/media/quem_hero-img1@2x.7c511c6064a81c2f778f.png",
     "static/media/bg-3.png": "/jupter/static/media/bg-3.b2802b694e115c44c7b3.png",
     "static/media/fa-solid-900.eot": "/jupter/static/media/fa-solid-900.efbd5d20e407bbf85f2b.eot",
     "static/media/fa-solid-900.ttf": "/jupter/static/media/fa-solid-900.07c3313b24f7b1ca85ee.ttf",
@@ -154,7 +152,7 @@
     "static/media/icon_77.svg": "/jupter/static/media/icon_77.e206c8eee3a758dc615a.svg"
   },
   "entrypoints": [
-    "static/css/main.bb157b84.css",
-    "static/js/main.b9d92769.js"
+    "static/css/main.98a1a492.css",
+    "static/js/main.0015b8f9.js"
   ]
 }
