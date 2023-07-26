@@ -46,6 +46,7 @@ const Carreira = ({ className = "carreira" }) => {
                     }
                     alt="jupter energy"
                     width="365"
+                    className="carreira-img"
                   />
               </div>
               {/* End .col */}
@@ -68,7 +69,7 @@ const Carreira = ({ className = "carreira" }) => {
                     alt="jupter energy"
                     width="35"
                   />                    
-                  <strong>Arraste seu CV aqui para enviar</strong><br/>
+                  <strong>Envie seu CV aqui para enviar</strong><br/>
                   (formato pdf, doc ou jpg)
                   </center>
                 </div>

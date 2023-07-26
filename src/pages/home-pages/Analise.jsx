@@ -83,7 +83,7 @@ const Analise = ({ className = "quem" }) => {
                     alt="jupter energy"
                     width="35"
                   />                    
-                  <strong>Arraste sua fatura aqui para enviar</strong><br/>
+                  <strong>Clique e suba sua fatura aqui para enviar</strong><br/>
                   (formato pdf)
                   </center>
                 </div>  

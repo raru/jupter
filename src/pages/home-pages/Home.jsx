@@ -7,31 +7,29 @@ import AccordionOne from "../../components/service-provider/AccordionOne";
 import FancyBanner from "../../components/service-provider/FancyBanner";
 import HeroSlider from "../../components/service-provider/HeroSlider";
 import TextBlock from "../../components/service-provider/TextBlock";
+import Seo from "../../components/common/seo/Seo";
 
 
 const Home = () => {
   return (
     <div className="main-page-wrapper">
-      {/* <Seo title="Service Provider" /> */}
+      <Seo title="jupter energy" />
       {/* End Seo Related data */}
 
       {/* <!-- 
         =============================================
-        Sidebar Nav
         ============================================== 
         --> */}
       <Sidebar />
 
       {/* <!--
         =============================================
-        Theme Main Menu
         ==============================================
         --> */}
       <Header />
 
       {/* <!-- 
         =============================================
-        Theme Hero Banner
         ============================================== 
         --> */}
       <div>
@@ -60,10 +58,9 @@ const Home = () => {
 
       {/* <!--
 			=====================================================
-				Vcamp Text Block Five
 			=====================================================
 			--> */}
-      <div className="vcamp-text-block-five">
+      {/* <div className="vcamp-text-block-five">
         <div className="container">
           <div className="row align-items-center justify-content-start">
             <div className="col-lg-4">
@@ -80,26 +77,21 @@ const Home = () => {
                 </div>                
               </div>
             </div>
-            {/* End .col */}
 
             <div className="col-lg-6 offset-md-1">
               <div
                 className="accordion accordion-style-one md-mt-30"
-                id="accordionOne"
-              >
+                id="accordionOne">
                 <AccordionOne />
               </div>
             </div>
-            {/* End .col */}
           </div>
         </div>
-      </div>
-      {/* <!-- /.vcamp-text-block-five --> */}
+      </div> */}
 
 
       {/* <!--
 			=====================================================
-				Vcamp Fancy Banner One
 			=====================================================
 			--> */}
       <div className="fancy-banner-one">
