@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import video from '../../assets/images/media/aerial-view-of-water-discharge-320.mp4'
+import video from '../../assets/images/media/aerial-view-of-water-discharge-720.mp4'
+// import video from '../../assets/images/media/video.mp4'
 
 const FancyBanner = () => {
   return (
