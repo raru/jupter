@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/jupter/static/css/main.5a787917.css",
-    "main.js": "/jupter/static/js/main.268cb713.js",
+    "main.js": "/jupter/static/js/main.c0dda4eb.js",
     "static/media/aerial-top-down-view-of-water.mp4": "/jupter/static/media/aerial-top-down-view-of-water.6b9d07e59ededd2c12b0.mp4",
     "static/media/top-view-6s.mp4": "/jupter/static/media/top-view-6s.e29f188f687488af09f0.mp4",
     "static/media/aerial-top-6s.mp4": "/jupter/static/media/aerial-top-6s.4385c7119cb963796d18.mp4",
     "static/media/solar-energy-6s.mp4": "/jupter/static/media/solar-energy-6s.32d0e755dc031589503f.mp4",
     "static/media/fale@2x.jpg": "/jupter/static/media/fale@2x.9fef2de1d02f8aa7edcc.jpg",
-    "static/media/video.mp4": "/jupter/static/media/video.c4b53f135d9f22f9943b.mp4",
     "static/media/quem_bkg@2x.jpg": "/jupter/static/media/quem_bkg@2x.0a1d9cb159d657248451.jpg",
     "static/media/carreira@2x.jpg": "/jupter/static/media/carreira@2x.2215cb76551f71c13a7b.jpg",
     "static/media/analise@2x.png": "/jupter/static/media/analise@2x.f70871a1388f0041b62f.png",
@@ -17,6 +16,7 @@
     "static/media/fa-solid-900.svg": "/jupter/static/media/fa-solid-900.13de59f1a36b6cb4bca0.svg",
     "static/media/fa-brands-400.svg": "/jupter/static/media/fa-brands-400.216edb96b562c79adc09.svg",
     "static/media/bg-3.png": "/jupter/static/media/bg-3.b2802b694e115c44c7b3.png",
+    "static/media/aerial-view-of-water-discharge-320.mp4": "/jupter/static/media/aerial-view-of-water-discharge-320.51e7ff7a5a38d651da65.mp4",
     "static/media/fa-solid-900.eot": "/jupter/static/media/fa-solid-900.efbd5d20e407bbf85f2b.eot",
     "static/media/fa-solid-900.ttf": "/jupter/static/media/fa-solid-900.07c3313b24f7b1ca85ee.ttf",
     "static/media/fa-regular-400.svg": "/jupter/static/media/fa-regular-400.19e27d348fefc21941e0.svg",
@@ -153,6 +153,6 @@
   },
   "entrypoints": [
     "static/css/main.5a787917.css",
-    "static/js/main.268cb713.js"
+    "static/js/main.c0dda4eb.js"
   ]
 }
