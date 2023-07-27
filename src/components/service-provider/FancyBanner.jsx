@@ -31,6 +31,7 @@ const FancyBanner = () => {
         type="video/mp4"
       />
     </video>
+    
     </div>
   </div>
 </div>
