@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jupter/static/css/main.5a787917.css",
-    "main.js": "/jupter/static/js/main.039b1070.js",
+    "main.js": "/jupter/static/js/main.268cb713.js",
     "static/media/aerial-top-down-view-of-water.mp4": "/jupter/static/media/aerial-top-down-view-of-water.6b9d07e59ededd2c12b0.mp4",
     "static/media/top-view-6s.mp4": "/jupter/static/media/top-view-6s.e29f188f687488af09f0.mp4",
     "static/media/aerial-top-6s.mp4": "/jupter/static/media/aerial-top-6s.4385c7119cb963796d18.mp4",
@@ -118,12 +118,12 @@
     "static/media/shape_49.svg": "/jupter/static/media/shape_49.02eeeb6650738dc4abb0e1a1d833b8a9.svg",
     "static/media/quem_icon-varejista.svg": "/jupter/static/media/quem_icon-varejista.b09818d1a772dc3ed24090633937b00e.svg",
     "static/media/shape_51.svg": "/jupter/static/media/shape_51.06677e603ab62cab53f91ee426e77723.svg",
+    "index.html": "/jupter/index.html",
     "static/media/icon_67.svg": "/jupter/static/media/icon_67.ef47e30bd1984b3f09db5c9d24e9a8d1.svg",
     "static/media/shape_50.svg": "/jupter/static/media/shape_50.82ebd3da316c9c6791a3fea89b3adaa6.svg",
     "static/media/hero_img.svg": "/jupter/static/media/hero_img.bf4f746d40fbcf294490daad81632cee.svg",
     "static/media/fale_img.svg": "/jupter/static/media/fale_img.34bc61cf4a04beeb53d99ad0b8cb3e44.svg",
     "static/media/trabalhe_img.svg": "/jupter/static/media/trabalhe_img.f7a8bb4b3c1e68453377949df802ff02.svg",
-    "index.html": "/jupter/index.html",
     "static/media/video_bolinha.svg": "/jupter/static/media/video_bolinha.952c540221c0722e1b97c924e677fead.svg",
     "static/media/icon_upload.svg": "/jupter/static/media/icon_upload.5135c2d18a68ff5ef61fc28d6f223a75.svg",
     "static/media/nav_icon-off.svg": "/jupter/static/media/nav_icon-off.3945faa3ffb9417368551bf1b685de0f.svg",
@@ -153,6 +153,6 @@
   },
   "entrypoints": [
     "static/css/main.5a787917.css",
-    "static/js/main.039b1070.js"
+    "static/js/main.268cb713.js"
   ]
 }
