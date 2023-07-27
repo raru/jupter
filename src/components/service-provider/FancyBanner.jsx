@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import video from '../../assets/images/media/video.mp4'
+import video from '../../assets/images/media/aerial-view-of-water-discharge-320.mp4'
 
 const FancyBanner = () => {
   return (
@@ -24,7 +24,7 @@ const FancyBanner = () => {
 <div className="logo_mask mt-n6">
   <div className="video_holder">
     <div className="video_mask_inside">
-    <video muted="muted" autoPlay={"autoplay"} loop>
+    <video muted="muted" autoPlay={"autoplay"} loop muted playsInline>
       <source
         // src="https://creativegigstf.com/video/intro_3.mp4"
         src={video}        
