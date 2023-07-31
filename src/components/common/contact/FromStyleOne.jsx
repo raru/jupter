@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_w7z9kgf', 'template_6s8rpw4', form.current, 'OO5_zj_97Ev4i-GVE')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      alert('Envio feito com sucesso!')
   };
+
   return (
     <>
-      <form onClick={handleSubmit}>
+
+
+
+
+<form ref={form} onSubmit={sendEmail}>
         <div className="row controls">
           <div className="col-12">
             <div className="input-group-meta form-group mb-25">
@@ -14,7 +32,7 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
               <input
                 type="text"
                 placeholder="Seu nome"
-                name="name"
+                name="from_name" 
                 required
               />
               <div className="help-block with-errors"></div>
@@ -28,7 +46,7 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
               <input
                 type="text"
                 placeholder="+55 DDD 1234-4321"
-                name="email"
+                name="from_telefone"
                 required
               />
               <div className="help-block with-errors"></div>
@@ -42,7 +60,7 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
               <input
                 type="email"
                 placeholder="seuemail@gmail.com"
-                name="email"
+                name="from_email"
                 required
               />
               <div className="help-block with-errors"></div>
@@ -64,13 +82,14 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
           {/* End .col */}
 
           <div className="col-12">
-            <button className={`theme-btn-one  ripple-btn w-100 ${className}`}>
+            <button type="submit"  className={`theme-btn-one  ripple-btn w-100 ${className}`}>
               Enviar
-            </button>
+            </button >
           </div>
           {/* End .col */}
         </div>
-      </form>
+</form>
+
     </>
   );
 };

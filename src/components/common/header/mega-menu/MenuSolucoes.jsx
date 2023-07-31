@@ -6,6 +6,7 @@ import Slider from "react-slick";
 function refreshPage() { window. location. reload(false); }
 
 
+
 const MenuSolucoes = (props) => {
 
 
@@ -13,6 +14,12 @@ const MenuSolucoes = (props) => {
 // const myData = location.state;
 // console.log(myData);
 
+  // Top: 0 takes us all the way back to the top of the page
+  // Behavior: smooth keeps it smooth!
+    window.scrollTo({
+      top: 700,
+      behavior: "smooth",
+    });
 
 const initialslide = useLocation();
 const myData = initialslide.state;

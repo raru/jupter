@@ -7,7 +7,7 @@ const counterUpContent = [
     id: 1,
     startCount: "0",
     endCount: "40",
-    endPointText: "milhões",
+    endPointText: " milhões",
     meta: "em 30 meses",
     animationDelay: "0",
   },
@@ -15,7 +15,7 @@ const counterUpContent = [
     id: 2,
     startCount: "0",
     endCount: "22",
-    endPointText: "milhões",
+    endPointText: " milhões",
     meta: "em 18 meses",
     animationDelay: "100",
   },
@@ -23,7 +23,7 @@ const counterUpContent = [
     id: 3,
     startCount: "0",
     endCount: "6",
-    endPointText: "milhões",
+    endPointText: " milhões",
     meta: "em 26 meses",
     animationDelay: "200",
   },
@@ -58,7 +58,7 @@ const CounterUp = () => {
                         }
                       }}
                     >
-                      <span ref={countUpRef} />
+                    + de  <span ref={countUpRef} />
                     </InView>
                   )}
                 </CountUp>

@@ -4,6 +4,7 @@
   "homepage": "https://raru.github.io/jupter/",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@popperjs/core": "^2.11.6",
     "@reduxjs/toolkit": "^1.8.4",
     "@testing-library/jest-dom": "^5.16.4",
@@ -35,7 +36,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",    
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

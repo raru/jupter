@@ -36,7 +36,7 @@ const Produto = () => {
 			Theme Hero Banner
 			============================================== 
 			--> */}
-      <div className="hero-banner-one bg-darkroxo mt-110">
+      <div className="solucoes hero-banner-one bg-darkroxo mt-110">
         <HeroProduto />
       </div>
       {/* <!-- /.hero-banner-one --> */}

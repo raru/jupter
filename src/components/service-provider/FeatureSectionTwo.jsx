@@ -9,14 +9,14 @@ const FeatureSectionTwo = () => {
       id: 1,
       icon: icon1,
       title: "Rede de comércio varejista",
-      descriptions: `Economia de 26%, mais de`,
+      descriptions: `Economia de 26%`,
       delayAnimationTime: 0,
     },
     {
       id: 2,
       icon: icon2,
       title: "Rede de supermercados",
-      descriptions: `Economia de 24%, mais de`,
+      descriptions: `Economia de 24%`,
       delayAnimationTime: 100,
     },
     {

@@ -1,12 +1,23 @@
-import React from "react";
-// import { Link } from "react-router-dom";
+import React, { useRef } from 'react';
+import { Link } from "react-router-dom";
 import Header from "../../components/service-provider/Header";
 import Footer from "../../components/common/footer/Footer";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
-
+import emailjs from '@emailjs/browser';
 
 const Analise = ({ className = "quem" }) => {
+
+
+
+  function formSubmit(event) {
+    event.preventDefault();
+    emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', this);
+    
+    alert('ENVIO FEITO')    
+  }
+
+
   return (
     <div className="main-page-wrapper">
       <Seo title="Analise" />
@@ -75,17 +86,32 @@ const Analise = ({ className = "quem" }) => {
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-6 md-offset-3 mt-80 upload-box"
                 data-aos="fade-right">
+
+<form enctype="multipart/form-data" method="post" onsubmit="formSubmit()">
+
                   <center>
-                  <img
+{/* 
+          <input type="file" onChange={handleChange}/> */}
+
+<label for="upload"><img
                     src={
                       require("../../assets/images/icon/icon_upload.svg").default
                     }
                     alt="jupter energy"
                     width="35"
-                  />                    
-                  <strong>Clique e suba sua fatura aqui para enviar</strong><br/>
-                  (formato pdf)
+
+                  />      
+                  <input type="file" id="upload" className='upload'></input>         
+</label>
+
+
+<button type="submit"><strong>Clique e suba sua fatura aqui para enviar</strong><br/>
+                  (formato pdf)</button>
+
                   </center>
+
+</form>
+
                 </div>  
             </div>
 

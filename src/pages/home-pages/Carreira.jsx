@@ -4,9 +4,19 @@ import Header from "../../components/service-provider/Header";
 import Footer from "../../components/common/footer/Footer";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
+import emailjs from '@emailjs/browser';
 
 
 const Carreira = ({ className = "carreira" }) => {
+
+  function formSubmit(event) {
+    event.preventDefault();
+    emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', this);
+    
+    alert('ENVIO FEITO')
+  }
+
+
   return (
     <div className="main-page-wrapper">
       <Seo title="Carreira" />
@@ -61,17 +71,26 @@ const Carreira = ({ className = "carreira" }) => {
                   Mande seu Curriculum, queremos te conhecer.
                   </h3>
                 <div className="md-mt-120 upload-box">
+
+                <form enctype="multipart/form-data" method="post" onsubmit="formSubmit()">
+
                   <center>
-                  <img
+<label for="upload"><img
                     src={
                       require("../../assets/images/icon/icon_upload.svg").default
                     }
                     alt="jupter energy"
                     width="35"
-                  />                    
-                  <strong>Envie seu CV aqui para enviar</strong><br/>
-                  (formato pdf, doc ou jpg)
+
+                  />      
+                  <input type="file" id="upload" className='upload'></input>         
+</label>                 
+<button type="submit"><strong>Envie seu CV aqui para enviar</strong><br/>
+                  (formato pdf, doc ou jpg)</button>
+                  
                   </center>
+
+</form>
                 </div>
               </div>
               {/* End .col */}
