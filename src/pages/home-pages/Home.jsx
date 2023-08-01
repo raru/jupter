@@ -12,7 +12,7 @@ import Seo from "../../components/common/seo/Seo";
 
 const Home = () => {
   return (
-    <div className="main-page-wrapper">
+    <div className="main-page-wrapper home">
       <Seo title="jupter energy" />
       {/* End Seo Related data */}
 
@@ -94,7 +94,7 @@ const Home = () => {
 			=====================================================
 			=====================================================
 			--> */}
-      <div className="fancy-banner-one">
+      <div className="fancy-banner-one home-bottom">
         <div className="inner-content position-relative">
           <div className="container">
             <div className="row align-items-center">
