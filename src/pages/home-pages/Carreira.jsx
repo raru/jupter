@@ -18,7 +18,7 @@ const Carreira = ({ className = "carreira" }) => {
 
 
   return (
-    <div className="main-page-wrapper">
+    <div className={`main-page-wrapper ${className}`}>
       <Seo title="Carreira" />
       {/* End Seo Related data */}
 

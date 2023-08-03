@@ -8,9 +8,9 @@ import FancyBanner from "../../components/service-provider/FancyBanner";
 import FeatureSection from "../../components/service-provider/FeatureSection";
 
 
-const Glossario = ({ className = "quem" }) => {
+const Glossario = ({ className = "glossario" }) => {
   return (
-    <div className="main-page-wrapper">
+    <div className={`main-page-wrapper ${className}`}>
       <Seo title="Glossario" />
       {/* End Seo Related data */}
 

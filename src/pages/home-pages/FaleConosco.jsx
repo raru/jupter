@@ -9,7 +9,7 @@ import Seo from "../../components/common/seo/Seo";
 
 const FaleConosco = ({ className = "fale" }) => {
   return (
-    <div className="main-page-wrapper">
+    <div className={`main-page-wrapper ${className}`}>
       <Seo title="FaleConosco" />
       {/* End Seo Related data */}
 

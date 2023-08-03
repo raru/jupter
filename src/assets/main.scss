@@ -337,7 +337,7 @@ footer .logo small {   color: #E6E6E6;  font-weight: 100;  font-size: 0.9em;  li
 
 
 
-// BUSSINES
+// HOME
 .hero-banner-one { background: var(--roxo-color);    padding: 85px 85px 140px; }
 .hero-banner-one .title-style-five.white-vr .title {  color: #fff; }
 .partner-slider-one {  margin-top: -100px;  z-index: 1;  position: relative; }
@@ -490,7 +490,13 @@ footer .logo small {   color: #E6E6E6;  font-weight: 100;  font-size: 0.9em;  li
 }
 .form-style-one button.theme-btn-one {  border-radius: 26px; }
 
+.form-style-one {
+    background: transparent;
+    padding: 0;
+    margin-right: 0;
+}
 
+.analise .form-style-one {  margin-right: 0; }
 
 
 
@@ -502,6 +508,7 @@ footer .logo small {   color: #E6E6E6;  font-weight: 100;  font-size: 0.9em;  li
       min-height: 535px;
   }
 }
+
 
 
 
@@ -529,7 +536,15 @@ footer .logo small {   color: #E6E6E6;  font-weight: 100;  font-size: 0.9em;  li
 
 
 
-/** MOBILE */
+
+
+
+/*******************
+
+        MOBILE 
+
+********************/
+
 @media (max-width: 991px) {
 
 body {    font-size: 12px;}

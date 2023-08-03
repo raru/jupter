@@ -6,7 +6,7 @@ import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
 import emailjs from '@emailjs/browser';
 
-const Analise = ({ className = "quem" }) => {
+const Analise = ({ className = "analise" }) => {
 
 
 
@@ -20,7 +20,7 @@ const Analise = ({ className = "quem" }) => {
 
 
   return (
-    <div className="main-page-wrapper">
+    <div className={`main-page-wrapper ${className}`}>
       <Seo title="Analise" />
       {/* End Seo Related data */}
 
@@ -90,7 +90,7 @@ const Analise = ({ className = "quem" }) => {
 
 <form enctype="multipart/form-data" method="post" onsubmit="formSubmit()">
  
-<div className="row controls">
+<div className="row controls form-style-one">
 
                   <center>
 {/* 
