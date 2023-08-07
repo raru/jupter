@@ -500,6 +500,33 @@ footer .logo small {   color: #E6E6E6;  font-weight: 100;  font-size: 0.9em;  li
 
 
 
+div:where(.swal2-container) h2:where(.swal2-title) {
+    color: black;
+    font-size: 1.475em;
+    font-weight: 400;
+}
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    border-radius: 25px;
+}
+
+div:where(.swal2-icon).swal2-success .swal2-success-ring {
+    background: #8DE85B;
+}
+
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
+    z-index: 99;
+    height: 0.2125em;
+    background-color: #fff;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border-radius: 1.25em;
+    padding-inline: 40px;
+}
+
+
+
 
 
 // Hero Desktop

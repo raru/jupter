@@ -5,19 +5,62 @@ import Footer from "../../components/common/footer/Footer";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
+
 
 const Analise = ({ className = "analise" }) => {
 
 
 
-  function formSubmit(event) {
-    event.preventDefault();
-    emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', this);
-    
-    alert('Envio feito com sucesso!')
+  // function formSubmit(event) {
+  //   event.preventDefault();
+  //   emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', this)
+  //     .then((result) => {
+  //       console.log(result.text);
+  //       Swal.fire({
+  //         icon: 'success',
+  //         title: 'Message Sent Successfully'
+  //       })
+  //     }, (error) => {
+  //       console.log(error.text);
+  //       Swal.fire({
+  //         icon: 'error',
+  //         title: 'Ooops, something went wrong',
+  //         text: error.text,
+  //       })
+  //     });
    
-  }
+  // }
 
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', form.current, 'OO5_zj_97Ev4i-GVE')
+
+      .then((result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: 'success',
+          title: 'Mensagem Enviada'
+        })
+      }, (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, algo deu errado',
+          text: error.text,
+        })
+
+        e.target.reset()
+
+      });
+
+      
+  };
 
   return (
     <div className={`main-page-wrapper ${className}`}>
@@ -88,8 +131,10 @@ const Analise = ({ className = "analise" }) => {
               <div className="col-xl-6 col-lg-6 md-offset-3 mt-10 upload-box"
                 data-aos="fade-right">
 
-<form enctype="multipart/form-data" method="post" onsubmit="formSubmit()">
- 
+{/* <form enctype="multipart/form-data" method="post" onsubmit="formSubmit()"> */}
+
+<form ref={form} onSubmit={sendEmail}>
+
 <div className="row controls form-style-one">
 
                   <center>

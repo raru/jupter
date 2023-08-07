@@ -1,21 +1,41 @@
-import React from "react";
+import React, { useRef } from 'react';
 // import { Link } from "react-router-dom";
 import Header from "../../components/service-provider/Header";
 import Footer from "../../components/common/footer/Footer";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 
 const Carreira = ({ className = "carreira" }) => {
 
-  function formSubmit(event) {
-    event.preventDefault();
-    emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', this);
-    
-    alert('ENVIO FEITO')
-  }
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', form.current, 'OO5_zj_97Ev4i-GVE')
+    
+    .then((result) => {
+      console.log(result.text);
+      Swal.fire({
+        icon: 'success',
+        title: 'Mensagem Enviada'
+      })
+    }, (error) => {
+      console.log(error.text);
+      Swal.fire({
+        icon: 'error',
+        title: 'Ooops, algo deu errado',
+        text: error.text,
+      })
+
+      e.target.reset()
+
+    });
+   
+  };    
 
   return (
     <div className={`main-page-wrapper ${className}`}>
@@ -72,7 +92,8 @@ const Carreira = ({ className = "carreira" }) => {
                   </h3>
                 <div className="md-mt-120 upload-box">
 
-                <form enctype="multipart/form-data" method="post" onsubmit="formSubmit()">
+                {/* <form enctype="multipart/form-data" method="post" onsubmit="formSubmit()"> */}
+                <form ref={form} onSubmit={sendEmail}>
 
                   <center>
 <label for="upload"><img

@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
 
 const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
 
@@ -9,13 +11,24 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
     e.preventDefault();
 
     emailjs.sendForm('service_w7z9kgf', 'template_6s8rpw4', form.current, 'OO5_zj_97Ev4i-GVE')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    .then((result) => {
+      console.log(result.text);
+      Swal.fire({
+        icon: 'success',
+        title: 'Mensagem Enviada'
+      })
+    }, (error) => {
+      console.log(error.text);
+      Swal.fire({
+        icon: 'error',
+        title: 'Ooops, algo deu errado',
+        text: error.text,
+      })
 
-      alert('Envio feito com sucesso!')
+      e.target.reset()
+
+    });
+   
   };
 
   return (
