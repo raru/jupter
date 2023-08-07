@@ -79,7 +79,7 @@ const Header = ({ className = "" }) => {
 
           <div className="right-widget d-flex align-items-center d-none d-sm-block">
             {/* <Link to="/sign-in" className="d-flex align-items-center login-btn"> */}
-            <Link to="/sign-in" className="d-flex align-items-center login-btn">
+            <Link to="https://powerhub.io/login" target="_blank" className="d-flex align-items-center login-btn">
                 <span>Área do Cliente</span>
             </Link>
             {/* End .sidebar-nav-button */}

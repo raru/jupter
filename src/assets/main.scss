@@ -521,12 +521,41 @@ div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
 }
 
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    border-radius: 1.25em;
-    padding-inline: 40px;
+  border-radius: 2.25em;
+  padding-inline: 40px;
+}
+
+div:where(.swal2-icon) {
+  width: 3em;
+  height: 3em;
+  margin: 2.5em auto -0.4em;
+}
+
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
+  z-index: 99;
+  height: 0.1125em;
+  background-color: #fff;
+}
+
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip] {
+  top: 1.675em;
+  left: 0.8125em;
+  width: 0.5625em;
 }
 
 
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long] {
+  top: 1.475em;
+  right: 0.8em;
+  width: 1.1375em;
+}
 
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus,
+div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left],
+div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right,
+div:where(.swal2-icon).swal2-success .swal2-success-fix {
+  display: none;
+}
 
 
 // Hero Desktop
