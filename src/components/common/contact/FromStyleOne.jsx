@@ -1,14 +1,30 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 
 const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
 
+  const [formValues, setFormValues] = useState({
+    formNome: "",
+    formTel: "",
+    formEmail: "",
+    formMensagem: ""
+  });
+  const [records, setRecords] = useState([]);
+  
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    setRecords([...records, formValues]);
+    setFormValues({
+      formNome: "",
+      formTel: "",
+      formEmail: "",
+      formMensagem: ""
+    });    
 
     emailjs.sendForm('service_w7z9kgf', 'template_6s8rpw4', form.current, 'OO5_zj_97Ev4i-GVE')
     .then((result) => {
@@ -47,6 +63,11 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
                 placeholder="Seu nome"
                 name="from_name" 
                 required
+
+                value={formValues.formNome}
+                onChange={(e) =>
+                  setFormValues({ ...formValues, formNome: e.target.value })
+                }                
               />
               <div className="help-block with-errors"></div>
             </div>
@@ -61,6 +82,11 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
                 placeholder="+55 DDD 1234-4321"
                 name="from_telefone"
                 required
+
+                value={formValues.formTel}
+                onChange={(e) =>
+                  setFormValues({ ...formValues, formTel: e.target.value })
+                }                
               />
               <div className="help-block with-errors"></div>
             </div>
@@ -75,6 +101,11 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
                 placeholder="seuemail@gmail.com"
                 name="from_email"
                 required
+
+                value={formValues.formEmail}
+                onChange={(e) =>
+                  setFormValues({ ...formValues, formEmail: e.target.value })
+                }                     
               />
               <div className="help-block with-errors"></div>
             </div>
@@ -88,6 +119,11 @@ const FromStyleOne = ({ className = "theme-btn-one-roxo" }) => {
                 placeholder="Mensagem*"
                 name="message"
                 required
+
+                value={formValues.formMensagem}
+                onChange={(e) =>
+                  setFormValues({ ...formValues, formMensagem: e.target.value })
+                }                     
               ></textarea>
               <div className="help-block with-errors"></div>
             </div>

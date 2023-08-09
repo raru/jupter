@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
 import Header from "../../components/service-provider/Header";
 import Footer from "../../components/common/footer/Footer";
@@ -33,11 +33,23 @@ const Analise = ({ className = "analise" }) => {
    
   // }
 
+  const [formValues, setFormValues] = useState({
+    formNome: "",
+    formEmail: ""
+  });
+  const [records, setRecords] = useState([]);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    setRecords([...records, formValues]);
+    setFormValues({
+      formNome: "",
+      formEmail: ""
+    });    
+
 
     emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', form.current, 'OO5_zj_97Ev4i-GVE')
 
@@ -147,6 +159,11 @@ const Analise = ({ className = "analise" }) => {
                 placeholder="Seu nome"
                 name="from_name" 
                 required
+
+                value={formValues.formNome}
+                onChange={(e) =>
+                  setFormValues({ ...formValues, formNome: e.target.value })
+                }                   
               />
               <div className="help-block with-errors"></div>
             </div>
@@ -158,6 +175,11 @@ const Analise = ({ className = "analise" }) => {
                 placeholder="seuemail@gmail.com"
                 name="from_email"
                 required
+
+                value={formValues.formEmail}
+                onChange={(e) =>
+                  setFormValues({ ...formValues, formEmail: e.target.value })
+                }                   
               />
               <div className="help-block with-errors"></div>
             </div>
