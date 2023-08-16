@@ -15,7 +15,7 @@ const Carreira = ({ className = "carreira" }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_w7z9kgf', 'template_yl7ot7c', form.current, 'OO5_zj_97Ev4i-GVE')
+    emailjs.sendForm('service_w7z9kgf', 'template_tmjm459', form.current, 'OO5_zj_97Ev4i-GVE')
     
     .then((result) => {
       console.log(result.text);
@@ -96,7 +96,7 @@ const Carreira = ({ className = "carreira" }) => {
                 <form ref={form} onSubmit={sendEmail}>
 
                   <center>
-<label for="upload"><img
+<label for="cv"><img
                     src={
                       require("../../assets/images/icon/icon_upload.svg").default
                     }
@@ -104,7 +104,7 @@ const Carreira = ({ className = "carreira" }) => {
                     width="35"
 
                   />      
-                  <input type="file" id="upload" className='upload'></input>         
+                  <input type="file" name="cv" id="cv" className='cv'></input>         
 </label>                 
 <button type="submit"><strong>Envie seu CV aqui para enviar</strong><br/>
                   (formato pdf, doc ou jpg)</button>

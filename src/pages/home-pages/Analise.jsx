@@ -192,7 +192,7 @@ const Analise = ({ className = "analise" }) => {
                     width="35"
 
                   />      
-                  <input type="file" id="upload" className='upload'></input>         
+                  <input type="file"  name="upload" id="upload" className='upload'></input>         
 </label>
 
 
