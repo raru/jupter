@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jupter/static/css/main.9fa204c2.css",
+    "main.css": "/jupter/static/css/main.482d3037.css",
     "main.js": "/jupter/static/js/main.25e326a3.js",
     "static/media/aerial-top-down-view-of-water.mp4": "/jupter/static/media/aerial-top-down-view-of-water.6b9d07e59ededd2c12b0.mp4",
     "static/media/top-view-6s.mp4": "/jupter/static/media/top-view-6s.e29f188f687488af09f0.mp4",
@@ -152,7 +152,7 @@
     "static/media/icon_77.svg": "/jupter/static/media/icon_77.e206c8eee3a758dc615a.svg"
   },
   "entrypoints": [
-    "static/css/main.9fa204c2.css",
+    "static/css/main.482d3037.css",
     "static/js/main.25e326a3.js"
   ]
 }
