@@ -1,7 +1,7 @@
 {
   "name": "jupter",
-  "version": "1.1.0",
-  "homepage": "https://raru.github.io/jupter/",
+  "version": "1.2.0",
+  "homepage": "http://jupterenergy.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
